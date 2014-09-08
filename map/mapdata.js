@@ -44,6 +44,10 @@ var items_description = {
             "type": "weapon",
             "name": "Диковинное оружие"
                 //"full_list":""
+        },{
+            "type": "weapon",
+            "name": "Оружие Чумы"
+                //"full_list":""
         }]
     },
     "f3": {
