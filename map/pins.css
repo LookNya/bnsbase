@@ -1,0 +1,228 @@
+#f1{
+	left: 21%;
+	top: 65%;
+}
+#f2{
+	left: 55%;
+	top: 27%;
+}
+#f3{
+	left: 46%;
+	top: 29%;
+}
+#f4{
+	left: 50%;
+	top: 24%;
+}
+#f5{
+	left: 69%;
+	top: 41%;
+}
+#f6{
+	left: 65%;
+	top: 45%;
+}
+#f7{
+	left: 62%;
+	top: 53%;
+}
+#f8{
+	left: 82%;
+	top: 74%;
+}
+/*                                           Desert*/
+#d1{
+	left: 3%;
+	top: 75%;
+}
+#d2{
+	left: 41%;
+	top: 90%;
+}
+#d3{
+	left: 61%;
+	top: 67%;
+}
+#d4{
+	left: 73%;
+	top: 9%;
+}
+#d5{
+	left: 60%;
+	top: 51%;
+}
+#d6{
+	left: 64%;
+	top: 68%;
+}
+#d7{
+	left: 80%;
+	top: 33%;
+}
+#d8{
+	left: 87%;
+	top: 25%;
+}
+#d9{
+	left: 77%;
+	top: 36%;
+}
+#d10{
+	left: 31%;
+	top: 16%;
+}
+#d11{
+	left: 36%;
+	top: 5%;
+}
+#d12{
+	left: 67%;
+	top: 48%;
+}
+#d13{/*TODO*/
+	left: 48%;
+	top: 12%;
+}
+/*                                           Plain*/
+#p1{
+	left: 46%;
+	top: 36%;
+}
+#p2{
+	left: 41%;
+	top: 34%;
+}
+#p3{
+	left: 51%;
+	top: 29%;
+}
+#p4{
+	left: 53%;
+	top: 41%;
+}
+#p5{
+	left: 61%;
+	top: 36%;
+}
+#p6{
+	left: 49%;
+	top: 50%;
+}
+#p7{
+	left: 27%;
+	top: 19%;
+}
+#p8{
+	left: 22%;
+	top: 23%;
+}
+#p9{
+	left: 15%;
+	top: 26%;
+}
+#p10{
+	left: 28%;
+	top: 41%;
+}
+#p11{
+	left: 28%;
+	top: 41%;
+}
+#p12{
+	left: 8%;
+	top: 40%;
+}
+#p13{
+	left: 12%;
+	top: 42%;
+}
+#p14{
+	left: 12%;
+	top: 53%;
+}
+#p15{
+	left: 10%;
+	top: 47%;
+}
+#p16{
+	left: 5%;
+	top: 35%;
+}
+#p17{
+	left: 22%;
+	top: 62%;
+}
+#p18{
+	left: 19%;
+	top: 68%;
+}
+#p19{
+	left: 38%;
+	top: 85%;
+}
+#p20{
+	left: 52%;
+	top: 67%;
+}
+#p21{
+	left: 62%;
+	top: 71%;
+}
+#p22{
+	left: 77%;
+	top: 85%;
+}
+#p23{
+	left: 73%;
+	top: 85%;
+}
+#p24{
+	left: 76%;
+	top: 28%;
+}
+#p25{
+	left: 91%;
+	top: 39%;
+}
+#p26{
+	left: 77%;
+	top: 38%;
+}
+#p27{
+	left: 84%;
+	top: 25%;
+}
+/*                                           Common*/
+.pin{
+  width: 8px;
+  height: 8px;
+  border-radius: 50% 50% 50% 0%;
+  background: #3394ff;
+  /*border: 5px solid #00cae0;*/
+  border: 5px solid #3394ff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  cursor: pointer;
+}
+.pin:after{
+  width: 8px;
+  height: 8px;
+  border-radius: 50% 50% 50% 50%;
+  background: white;
+  position: absolute;
+  cursor: pointer;
+  content: "";
+}
+.forest .forest_pin, .desert .desert_pin, .plane .plane_pin{
+	display:block;
+}
+.forest .desert_pin, .forest .plane_pin, .desert  .forest_pin, .desert  .plane_pin, .plane .forest_pin, .plane .desert_pin{
+	display:none;
+	position:absolute;
+	left:-10000;
+}
+
+

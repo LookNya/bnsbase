@@ -1,0 +1,358 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+#back{
+	position:fixed; 
+	left:0; 
+	top:0; 
+	right:0;
+	bottom:0;
+	height: 100%;
+	width: 100%;
+}
+#back img{
+	height: 100%;
+	margin-left:5%;
+
+}
+.logo{
+	margin: 12px;
+	font-weight: bold;
+	-webkit-transition: color 0.2s ease;
+	transition: color 0.2s ease;
+}
+.logo:hover{
+	color: black;
+}
+.head_but{
+	padding: 12px;
+	-webkit-transition: background 0.2s ease;
+	transition: background 0.2s ease;
+}
+.head_but:hover{
+	background: #298FFF;
+}
+.head_but:active{
+	background: #1372DB;
+}
+.head_but,.class_but,.logo{
+	cursor: pointer;
+}
+.h_b_selected{
+	background: #c7c7cc;
+	color: #006ADD;
+}
+.h_b_selected:hover{
+	background: #c7c7cc;
+	color: #006ADD;
+}
+.class_but{
+	color:rgb(5, 5, 5);
+	transition: color 0.2s ease;
+}
+.selected_but{
+	color: #006ADD;
+}
+.selected_head_but{
+
+}
+.header{
+	width:100%;
+	position:fixed; 
+	left:0; 
+	top:0; 
+	right:0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+	-webkit-user-select: none;
+	-moz-user-select: none; 
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;   
+}
+.header a{
+	text-decoration: none;
+	color: white;
+}
+
+.top_header{
+	width:100%;
+	height: 40px;
+	background: #007aff;
+	color: white;
+}
+.under_header{
+	width:100%;
+	overflow: hidden;
+	background:  #c7c7cc;
+}
+.class_but{
+	padding: 7px;
+	margin-left: 6px;
+	-webkit-transition: background 0.1s ease;
+	transition: background 0.1s ease;
+}
+.class_but:hover{
+	background: #D6D6DB;
+}
+.class_but:active{
+	background: rgb(150, 152, 224);
+}
+.content{
+	padding-top: 70px;
+	background: white;
+	font-weight: light;
+}
+.main_wrap{
+	overflow: hidden;
+	width: 1270px;
+	margin: 0 auto;
+}
+
+.main_line, .secondary_line{
+	overflow: hidden;
+	text-align: center;
+	margin: 10px;
+}
+.secondary_line{
+	overflow: hidden;
+}
+.morf_tips{
+	padding: 30px;
+	width: 1000px;
+	margin: 0 auto;
+}
+.item , .arrow{
+	height: 290px;
+	padding-top: 30px;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0 -2px;
+}
+.item_icon_img , .arrow_icon_img{
+	border-radius: 3px;
+}
+.arrow{
+	width: 150px;
+}
+
+.arrow_name{
+	font-size: 10pt;
+}
+/*                                 item */
+.item {
+	width: 200px;
+	border-radius: 4px;
+	border-top: 5px solid #c7c7cc;
+	padding: 15px;
+	background: rgb(240, 240, 240);
+}
+.item_icon{
+	height: 100px;
+
+}
+.item_icon_img{
+	height:60px;
+	width: 60px;
+	margin: 0 auto;
+	position: relative;
+	bottom: -20px;
+}
+.item_data{
+	overflow: hidden;
+}
+
+.item_data_wrap{
+	-webkit-transition: margin 0.4s ease;
+}
+.item_name{
+	overflow: hidden;
+	font-size: 13pt;
+	text-transform: uppercase;
+}
+.item_description{
+	overflow: hidden;
+	padding-top: 20;
+}
+/*                                 arrow */
+.arrow_icon{
+	height: 150px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.arrow_icon_img{
+	height: 40px;
+	width: 40px;
+	margin: 0 auto;
+	position: relative;
+	bottom: -70px;
+	display: inline-block;
+	
+}
+.arrow_name{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.arrow_description{
+	height: 200px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 100px;
+	-webkit-transition: padding 0.2s ease;
+	transition: padding 0.2s ease;
+	font-size: 8pt;
+}
+.arrow:hover .arrow_description{
+	padding-top: 0;
+}
+
+/*                                 daily */
+
+.location_line{
+	overflow: hidden;
+}
+.loc_name{
+	overflow: hidden;
+	width: 100%;
+	font-size: 17pt;
+	font-weight: 600;
+	font-family: serif;
+	padding: 15px;
+}
+.q_table{
+	margin-left:100px;
+}
+.q_table td{
+	padding: 10px;
+	width: 250px;
+}
+.q_table td:nth-child(1){
+	padding: 10px;
+	width: 50px;
+}
+.q_table td:nth-child(4){
+	padding: 10px;
+	width: auto;
+}
+.map{
+	width: 1020px;
+	height: 704px;
+	/* margin: 10px auto; */
+	margin: 10px 10px 10px 110px;
+}
+.map_forest{
+	background: url("http://i.imgur.com/Ra96aZL.jpg");	
+	background-size: cover;
+}
+.map_desert{
+	background: url("https://pp.vk.me/c540108/c618023/v618023115/923f/N0AblTcUrSE.jpg");
+	background-position-y: -100;
+	height: 850px;
+}
+.map_plane{
+	background: url("http://cs618023.vk.me/v618023115/b14a/BB3cthRLkFw.jpg");
+	background-position-y: -100;
+	height: 850px;
+}
+
+/*                                 tower */
+.text_block{
+	padding-left:100px;
+	line-height: normal;
+	width: 900px;
+}
+.t_table{
+	width: 100%;
+}
+.t_table td{
+	padding: 10px;
+	border: 1px solid grey;
+}
+.t_table tr:nth-child(1){
+	text-align: center;
+}
+.t_n_list{
+	margin-left:50px;
+}
+.f_l{
+	float:left;
+}
+.f_r{
+	float:right;
+}
+.hidden{
+	display:none;
+}
+.visible{
+	display:block;
+}
+
+.f_text{
+	width: 500px;
+	color: #888;
+	text-align: center;
+	line-height: normal;
+	padding: 10px;
+	margin: 0 auto;
+	margin-top: 50px;
+	font-size: 10pt;
+}
+/*                                 plains */
+.blue{
+	color: rgb(76, 170, 201);
+}
+.purple{
+	color: rgb(140, 72, 183);
+}
+.plate_holder{
+	margin: 20px 0px;
+}
+.plate_descr{
+	margin-left: 40px;
+	font-size: 11pt;
+}
+/*                 CSS Reset                   */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
