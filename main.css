@@ -38,6 +38,9 @@ body{
 .head_but,.class_but,.logo{
 	cursor: pointer;
 }
+.h_b_featured{
+	color: rgb(255, 247, 58);
+}
 .h_b_selected{
 	background: #c7c7cc;
 	color: #006ADD;
