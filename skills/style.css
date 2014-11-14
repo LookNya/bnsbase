@@ -1,0 +1,151 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.tree{
+	position: relative;
+}
+#skills_list_wrap{
+	overflow: auto;
+}
+.skills_skill{
+	cursor: pointer;
+}
+.skill_but_inactive{
+	color: grey;
+	cursor: auto;
+}
+.skill_tree_edge_first{
+	position: absolute;
+	width: 2px;
+	background: rgb(207,207,207);
+}
+.skill_tree_edge_other{
+	position: absolute;
+	border-radius: 0 5px 0 0;
+	border-top: 2px solid;
+	border-right: 2px solid;
+	border-color: rgb(207,207,207);
+}
+.skill_but{
+	width: 50px;
+	height: 50px;
+	border: 1px solid grey;
+	margin: -26px;
+	position: absolute;
+}
+.active{
+	background: grey;
+}
+
+.f_l{
+	float:left;
+}
+.f_r{
+	float:right;
+}
+.hidden{
+	display:none;
+}
+.visible{
+	display:block;
+}
+
+
+/*                 CSS Reset                   */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.calc_container{
+	text-align: center;
+	background: rgb(255, 255, 255);
+}
+.content{
+	overflow: hidden;
+	display: inline-block;
+	text-align: left;
+	width: 1240px;
+}
+.items_search{
+	padding: 15px;
+	overflow: hidden;
+}
+.search_form_wrap {
+	overflow: hidden;
+}
+#search_input {
+	width: 245px;
+	padding: 5px;
+	margin-top: 10px;
+	border: 1px solid rgb(187, 187, 187);
+	background: url('http://i.imgur.com/NV8YBLb.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 28px;
+}
+#search_input:focus{
+	background: none;
+}
+.skills_list_container{
+	width: 275px;
+	box-sizing: border-box;
+}
+#skills_list_wrap{
+	width: inherit;
+}
+#skills_list_wrap>div{
+	padding-left: 10px;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid grey;
+}
+#skills_list_wrap>.skills_separator{
+	height: 35px;
+	line-height: 35px;
+	background: rgb(228, 228, 228);
+}
+#skills_tree_wrap{
+	width: 520px;
+	height: 100%;
+}
+#skills_info_wrap{
+	width: 442px;
+}

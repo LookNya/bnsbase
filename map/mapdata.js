@@ -44,10 +44,6 @@ var items_description = {
             "type": "weapon",
             "name": "Диковинное оружие"
                 //"full_list":""
-        },{
-            "type": "weapon",
-            "name": "Оружие Чумы"
-                //"full_list":""
         }]
     },
     "f3": {
@@ -1356,6 +1352,37 @@ var items_description = {
                 //"full_list":""
         }]
     },
+	    "p28": {
+        "title": "Темная бухта акулы",
+        "searchable": true,
+        "items_here": [
+			"Руины линов",
+            "Меч линов",
+            "Тати линов",
+            "Жезл линов",
+            "Кодати линов",
+            "Секира линов",
+            "Кастеты линов",
+            "Амулет линов",
+            "Кольцо линов",
+            "Скрижаль линов"
+        ],
+        "pic_url": "",
+        "add_text": "",
+        "pin_items": [{
+            "type": "weapon",
+            "name": "Оружие линов"
+                //"full_list":""
+        }, {
+            "type": "plain",
+            "name": "Скрижаль линов"
+                //"full_list":""
+        }, {
+            "type": "ring",
+            "name": "Кольцо линов"
+                //"full_list":""
+        }]
+    }
     /*"p28":{
         "title":"Убежище линов",
         "searchable": false,

@@ -1,0 +1,37 @@
+{{ function makeTree(tree, fullpath) { }}
+	{{ if (tree.children.length == 0) return; }}
+	
+	{{? tree.with_index }}
+		<ul>
+		{{~ tree.children :child }}
+			{{ if (!child.with_index) continue; }}
+			{{ var cur_fullpath = fullpath+"/"+child.fname; }}
+			<li {{? child.id==it.currentNode.id }} class="ul_heading" {{?}} >
+				<a href="{{=cur_fullpath}}">{{= child.fname }}</a>
+				{{ makeTree(child, cur_fullpath); }}
+			</li>
+		{{~}}
+		</ul>
+	{{??}}
+		{{~ tree.children :child }}
+			{{ makeTree(child, cur_fullpath); }}
+		{{~}}
+	{{?}}
+{{ } }}
+
+
+<div id="fake_pages_list" class="hidden">
+	<div class="fpl_inner">
+		<div>
+			<div class="f_l">Все страницы сайта</div>
+			<div class="f_r c_pointer" onclick="togglePagesList()">&times;</div>
+		</div>
+		<div id="ulwrap" style="overflow-y:scroll">
+{{ makeTree(it.tree, ""); }}
+		</div>
+	</div>
+</div>
+<script>
+ulwrap.style.height= screen.height - 100+'px'
+</script>
+

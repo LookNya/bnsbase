@@ -23,18 +23,24 @@ function init(){
 	openHash()
 }
 function openHash(){
-
+	
 	hash = window.location.hash
 	if(hashNotValid()){
 		return
 	}
-	document.getElementById(hash.split('#')[1]).click()
-	
+	if(document.getElementById(hash.split('#')[1])){
+		document.getElementById(hash.split('#')[1]).click()
+	} else {
+		loadMap(hash.split('#')[1][0])
+	}
 	function hashNotValid(){
 		if(!hash){
+			return true
+		}	
+		if(hash.split('#')[1][0]=='f'||hash.split('#')[1][0]=='d'||hash.split('#')[1][0]=='p'){
 			return false
 		}
-		data = hash.split('#')[1]
+		var data = hash.split('#')[1]
 		if(items_description[data]){
 			return false
 		}
@@ -60,6 +66,7 @@ function calcMapSize(){
 	map.style.height = calcedHeight+"px"
 	document.getElementsByClassName('items_container')[0].style.height = calcedHeight+"px"
 	ic.style.height = calcedHeight-document.getElementsByClassName('items_search')[0].offsetHeight+"px"
+	document.getElementsByClassName('selector')[0].style.width = document.getElementsByClassName('main_map_wrap')[0].offsetWidth - 100 +'px'
 }
 function casheMap(){ // currently not used
 	document.getElementsByClassName('map_container')[0].setAttribute('class', 'map_container f_l blured')
@@ -74,7 +81,12 @@ function loadMap(m){
     curMap=m
     maps={"f":"forest", "d":"desert", "p":"plane"}
 	document.getElementById('map').className=maps[m]
-
+	for(i=0; i<document.getElementsByClassName('class_but').length; i++){
+		document.getElementsByClassName('class_but')[i].className = "class_but f_l"
+		if(document.getElementsByClassName('class_but')[i].getAttribute('cl')==m){
+			document.getElementsByClassName('class_but')[i].className = "class_but f_l selected_but"
+		}
+	}
 	//document.getElementByClassName('map_container')[0].className="map_container blured"
 }
 function loadSearchItems(){
@@ -171,8 +183,6 @@ function pinSelect(e){
 			updateMenu()
 		}
 	}
-    //leftPos = window.getComputedStyle(e.target).getPropertyValue('left').substr(0, window.getComputedStyle(e.target).getPropertyValue('left').length-2)
-    //topPos = window.getComputedStyle(e.target).getPropertyValue('top').substr(0, window.getComputedStyle(e.target).getPropertyValue('top').length-2)
 	leftPos = e.target.offsetLeft
 	topPos = e.target.offsetTop
 	

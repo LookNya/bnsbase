@@ -1,0 +1,56 @@
+.selector{
+	overflow: hidden;
+	display: inline-block;
+	text-align: left;
+	margin-top: 20px;
+	margin-left: 4px;
+	min-width: 1085px;
+	box-sizing: border-box;	
+	height: 30px;
+	line-height: 29px;
+	border: 1px solid #5CA3F1;
+	border-radius: 5px;
+}
+.selector>div{
+	text-align: center;
+	font-size: 16px;
+}
+.selector>div:nth-child(2){
+	border-right: 1px solid #5CA3F1;
+	border-left: 1px solid #5CA3F1;
+	box-sizing: border-box;
+}
+.selector .selected_but{
+	font-weight: bold;
+}
+.s_craft{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	min-width: 0;
+	display: block;
+	width: 900px;
+}
+.s_craft>div{
+	float: left;
+	box-sizing: border-box;
+}
+.s_craft>div:nth-child(2){
+	border-right: 0px;
+	border-left: 0px;
+}
+.s_craft>div:nth-child(n+1){
+	border-right: 1px solid #5CA3F1;
+}
+.s_craft>div:nth-child(7){
+	border: 0px;
+}
+.s_craft>div{
+	width: 14.2%
+}
+.s_craft a, .s_craft a:hover, .s_craft a:active, .s_craft a:visited{
+	color: black!important;
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+}

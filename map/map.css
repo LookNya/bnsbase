@@ -1,5 +1,32 @@
 .content{
 	text-align: center;
+	background: rgb(255, 255, 255);
+}
+.selector{
+	overflow: hidden;
+	display: inline-block;
+	text-align: left;
+	margin-top: 20px;
+	margin-left: 4px;
+	min-width: 1085px;
+	box-sizing: border-box;	
+	height: 30px;
+	line-height: 29px;
+	border: 1px solid #5CA3F1;
+	border-radius: 5px;
+}
+.selector>div{
+	text-align: center;
+	width: 33.3%;
+	font-size: 16px;
+}
+.selector>div:nth-child(2){
+	border-right: 1px solid #5CA3F1;
+	border-left: 1px solid #5CA3F1;
+	box-sizing: border-box;
+}
+.selector .selected_but{
+	font-weight: bold;
 }
 .main_map_wrap{
 	overflow: hidden;
@@ -167,18 +194,9 @@
 	content: "P";
 	background-color: #619294;
 }
-.itype_necklace:before{
-	content: "N";
+.itype_necklace:before, .itype_earring:before, .itype_ring:before, .itype_belt:before, .itype_bracelet:before{
+	content: "A";
 	background-color: #8AD0D4;
-	
-}
-.itype_earring:before{
-	content: "E";
-	background-color: #96E2F0;
-}
-.itype_ring:before{
-	content: "R";
-	background-color: #92DCE0;
 }
 .itype_resourse:before{
 	content: "Re";
