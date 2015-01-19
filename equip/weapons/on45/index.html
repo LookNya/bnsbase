@@ -16,7 +16,8 @@
 	<meta name="keywords" content="bnsbase, blade and soul, блейд энд соул, bns, playbns, база знаний, оружие" />
 	<link rel="shortcut icon" href="/img/favicon.png">
 	<link rel="stylesheet" href="/static/css/main.css" type="text/css" />
-	<title>Оружие на 45 уровне</title>
+	<link rel="stylesheet" href="/static/css/mobile.css" type="text/css" />
+	<title>Оружие на 45 уровне — база знаний Blade and Soul</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -81,16 +82,17 @@
 					<li><a href="/craft/ingredients/agriculture">Земледелие</a></li>
 				</ul>
 			</li>
-			<!--li ><a href="#">Калькулятор умений</a>
+			<li  class="hb_new"><a href="/skills">Калькулятор умений</a>
 				<ul>
-					<li><a href="#">Ассасин</a></li>
-					<li><a href="#">Блейдмастер</a></li>
-					<li><a href="#">Лин-блейдмастер</a></li>
-					<li><a href="#">Форсмастер</a></li>
-					<li><a href="#">Саммонер</a></li>
-					<li><a href="#">Дестроер</a></li>
+					<li><a href="/skills/asn">Ассасин</a></li>
+					<li><a href="/skills/bm">Мастер клинка</a></li>
+					<li><a href="/skills/lsm">Лин мастер клинка</a></li>
+					<li><a href="/skills/sum">Мастер призыва</a></li>
+					<li><a href="/skills/des">Мастер секиры</a></li>
+					<li><a href="/skills/kfm">Кунг-фу мастер</a></li>
+					<li><a href="/skills/fm">Мастер стихий</a></li>
 				</ul>
-			</li-->
+			</li>
 			<li ><a href="/map">Карта игры</a>
 				<ul>
 					<li><a href="/map#f">Диковинный лес</a></li>
@@ -101,6 +103,63 @@
 		</ul>
 		</div>
 	</div>
+	<div id="mobile_header_wrap">
+		<div class="mh_header">
+			<p><a href="/">BnS Base</a>
+			
+			
+			
+			
+			
+			
+			
+			 — оружие на 45 уровне
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div id="mh_control" onclick="toggleMobileHead()">►</div>
+		</div>
+		<div class="mh_links">
+			<p>Об игре</p>
+			<a href="/aboutgame/start">Как начать играть</a>
+			<a href="/aboutgame/morf">Что такое морф</a>
+			<p>Оружие</p>
+			<a href="/equip/weapons/under45">До 45 уровня</a>
+			<a href="/equip/weapons/on45">На 45</a>
+			<p>Бижутерия</p>
+			<a href="/equip/accessory/under45">До 45 уровня</a>
+			<a href="/equip/accessory/on45">На 45</a>
+			<p>Скрижали</p>
+			<a href="/equip/plains/under45">До 45 уровня</a>
+			<a href="/equip/plains/on45">На 45</a>
+			<a href="/equip/plains/list">Характеристики скрижалей</a>
+			<a href="/equip/plains/powerup">Заточка скрижалей</a>
+			<p>Крафт</p>
+			<a href="/craft/general">Особенности крафта</a>
+			<a href="/craft/actual">Актуальные професии</a>
+			<a href="/craft/ingredients">Ингредиенты</a>
+		</div>
+	</div>
+	<script>
+	function toggleMobileHead(){
+		mobile_header_wrap.classList.toggle('mhw_open')
+	}
+
+	</script>
+	
 </div>
 </nav>
 <div class="content">
@@ -116,7 +175,7 @@
 <link rel="stylesheet" href="/static/css/textpages/textpage.css" type="text/css">
 <link rel="stylesheet" href="/static/css/textpages/weps.css" type="text/css">
 <link rel="stylesheet" href="/static/css/textpages/wepsThin.css" type="text/css">
-<link rel="stylesheet" href="/static/css/textpages/mobileText.css" type="text/css">
+
 
 <div class="page">
 	<div class="page_text f_l">
@@ -138,7 +197,7 @@
 		<li>Дополнительные характеристики (зеленые). Шанс крита, Мощность крита и Реген Чи считаются 
 хорошими параметрами. Какой из них искать, выбирать вам, это зависит от вашего класса и стиля 
 игры.</li>
-		<li>Слоты под камни. В каждом оружии есть минимум 1 слот под драгоценный камень, желательно чтобы у вас сразу было около 3-х шестиугольных слотов. Хотя, один пятиугольный, мы считаем, тоже неплохой вариант, для алмаза на силу атаки. Ведь даже фиол пятиугольный будет стоить дешевле, чем любой шестиугольный.</li>
+		<li>Слоты под камни. В каждом оружии есть минимум 1 слот под драгоценный камень, желательно чтобы у вас сразу было около 3-х шестиугольных слотов. Хотя, один пятиугольный, мы считаем, тоже неплохой вариант, для алмаза на силу атаки. Ведь даже сияющий пятиугольный будет стоить дешевле, чем любой шестиугольный.</li>
 	</ul>
 	<a name="Проходное оружие"></a>
 	<h2>Проходное оружие</h2>
@@ -234,8 +293,9 @@
 	Как правило, вооружившись этим оружием, игроки идут в Бухту Штормов (По24), чтобы выбить что-то посолиднее.
 	</p>
 	<h4>Оружие смертоносной акулы 10</h4>
+	<p>Подхдит для новичков-одиночек.</p>
 	<p>
-	<!--Подробнее о Бухте штормов можно узнать в гайде.--> После убийства управляющего бухтой По Хваран через пару минут на Причале появляется один из четырех случайных боссов: Бес, Молот, Ледорог или Немой завоеватель. Каждый из них дает разное оружие, но самое приятное из них - Оружие смертоносной акулы.
+	<!--Подробнее о Бухте штормов можно узнать в гайде.--> После убийства управляющего бухтой По Хваран в режиме для 24 человек через пару минут на Причале появляется один из четырех случайных боссов: Бес, Молот, Ледорог или Немой завоеватель. Каждый из них дает разное оружие, но самое приятное из них — Оружие смертоносной акулы.
 	</p>
 	<p>
 	Оружие хорошо тем, что точить его очень просто и дешево, чтобы его выбить не нужно никакой подготовки или хорошей экипировки, при этом у него относительно много силы атаки и классный доп. стат на 600 крита. Зеленый стат с бафом на уклонение/блок прибавит вам выживаемости. Для начала — самый сок.
@@ -244,10 +304,12 @@
 	Единственный минус в том, что боссы появляются случайным образом (привет, Великий Корейский Рандом) и вы можете выбить Акулу с первого раза, как я, или же сидеть в скучном По24 несколько часов/дней/месяцев/лет.
 	</p>
 	<h4>Оружие Воина 5</h4>
+	<p>Бестолковый вариант.</p>
 	<p>
 	Не совсем уж проходной вариант, ведь для того чтобы его достать нужно хоть какое-то оружие 45 уровня, не говоря уже о том, что не каждый новичок легко убьет Хадо, с которого это оружие падает.
 	</p>
 	<h4>Оружие Колдуньи 5</h4>
+	<p>Нормальный вариант, но не советуем останавливаться на нем долго.</p>
 	<p>
 	Слабоватое оружие, но достать его очень просто. Один из самых невыгодных вариантов: силы атаки мало, доп. статы средние, а чтобы пройти подземелье нужно иметь хотя бы более-менее опытную группу.
 	</p>
@@ -255,6 +317,7 @@
 	Подробнее о Бухте Каракатицы можно узнать в гайде.
 	</p-->
 	<h4>Оружие пирата 5</h4>
+	<p>Подходит опытным игрокам.</p>
 	<p>
 	Хороший вариант: много силы атаки, отличные зеленые бафы — либо на Чи, либо на крит. Классам, зависящим от чи лучше будет первый вариант. Единственный минус — чтобы получить это оружие нужна опытная группа. 
 	</p>
@@ -262,6 +325,7 @@
 	Подробнее о Бухте Кровавой Акулы можно узнать в гайде.
 	</p-->
 	<h4>Кровожадное оружие отродья 10</h4>
+	<p>Подходит всем.</p>
 	<p>
 	Неплохое оружие, но у него есть два минуса.
 	</p>
@@ -317,6 +381,7 @@
 	<ul class="ul_num">
 		<li>
 			<h4>Оружие Лабиринта</h4>
+			<p>Продается у НПС у входа в Спиральный Лабиринт.</p>
 			<p>
 				Выигрывает по атаке, но проигрывает по дополнительному параметру. 
 				<br/>
@@ -325,6 +390,7 @@
 		</li>
 		<li>
 			<h4>Оружие Тени</h4>
+			<p>Получается путем морфа Оружия Гнева.<p>
 			<p>
 				Да, Силы атаки меньше, но реген Чи - шикарная вещь почти для всех классов. Мощность крита так же очень полезный стат в любой ситуации.
 			</p>
@@ -337,6 +403,7 @@
 		</li>
 		<li>
 			<h4>Спиральное оружие</h4>
+			<p>Получается путем морфа оружия из Лабиринта.</p>
 			<p>
 				По статам идентичен Тени, но отличается способом получения и, скорее всего, стоимостью.
 			</p>
@@ -357,6 +424,9 @@
 		На наш взгляд, если вы только пришли на 45 и собрали «проходную» экипировку, то стремиться к Тени или Спиральному оружию нет большого смысла. Но если вы играете давно и хотите продолжить, то можно заняться затратным морфом Тени или Спирального оружия и получить неплохое оружие с регеном Чи, который никогда лишним не бывает.
 
 	</p>
+	<p class="seealso">
+		Смотрите также <a href="/equip/accessory/on45/">Бижутерия на 45 уровне</a>, <a href="/equip/plains/on45/">Скрижали на 45 уровне</a>, <a href="/daily#plane">Ежедневные квесты Равнины изобилия</a>
+	</a>
 	<p class="author">
 	— Katyasha
 	</p>
@@ -403,7 +473,13 @@
 		<!--a href="/suggest">Предложить статью</a-->
 		<a href="https://twitter.com/BnSBase">Твиттер</a>
 	</div>
+	<div class="mobile_footer_wrap">
+		<a href="/about">О сайте</a>
+		<a href="/sitemap">Карта сайта</a>
+		<a href="https://twitter.com/BnSBase">Твиттер</a>
+	</div>
 </div>
+
 
 <div id="fake_top_panel" class="hidden">
 	<div class="ftop_inner">
@@ -479,7 +555,19 @@
 						<li><a href="/craft/ingredients/agriculture">Земледелие</a></li>
 					</ul>
 				</li>
-
+				
+				<li class="ul_heading">
+					<a href="/skills">Калькуляторы умений</a>
+				</li>
+				
+				<li><a href="/skills/asn">Ассасин</a></li>
+				<li><a href="/skills/bm">Мастер клинка</a></li>
+				<li><a href="/skills/lsm">Лин мастер клинка</a></li>
+				<li><a href="/skills/sum">Мастер призыва</a></li>
+				<li><a href="/skills/des">Мастер секиры</a></li>
+				<li><a href="/skills/kfm">Кунг-фу мастер</a></li>
+				<li><a href="/skills/fm">Мастер стихий</a></li>
+				
 				<li class="ul_heading">
 					<a href="/map">Карта игры</a>
 				</li>
@@ -498,6 +586,7 @@ ulwrap.style.height= document.body.clientHeight - 250+'px'
 
 
 <!-- Yandex.Metrika counter -->
+<noscript><div><img src="//mc.yandex.ru/watch/25076411" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <script type="text/javascript">
 (function (d, w, c) {
     (w[c] = w[c] || []).push(function() {
@@ -521,8 +610,14 @@ ulwrap.style.height= document.body.clientHeight - 250+'px'
         d.addEventListener("DOMContentLoaded", f, false);
     } else { f(); }
 })(document, window, "yandex_metrika_callbacks");
+<!-- /Google counter -->
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-20573745-2', 'auto');
+  ga('send', 'pageview');
 </script>
-<noscript><div><img src="//mc.yandex.ru/watch/25076411" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </body>
 </html>

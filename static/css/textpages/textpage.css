@@ -11,6 +11,12 @@
 	font-size: 14px;
 	color: rgba(133, 133, 133, 1);
 }
+.seealso{
+	padding-top: 10px;
+}
+.seealso a{
+	text-transform: lowercase;
+}
 .pc_nojs{
 	line-height: 24px;
 	margin-bottom: 20px;

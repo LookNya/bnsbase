@@ -16,7 +16,8 @@
 	<meta name="keywords" content="bnsbase, blade and soul, блейд энд соул, bns, playbns, база знаний, бижутерия, новичок" />
 	<link rel="shortcut icon" href="/img/favicon.png">
 	<link rel="stylesheet" href="/static/css/main.css" type="text/css" />
-	<title>Бижутерия до 45</title>
+	<link rel="stylesheet" href="/static/css/mobile.css" type="text/css" />
+	<title>Бижутерия до 45 — база знаний Blade and Soul</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -81,16 +82,17 @@
 					<li><a href="/craft/ingredients/agriculture">Земледелие</a></li>
 				</ul>
 			</li>
-			<!--li ><a href="#">Калькулятор умений</a>
+			<li  class="hb_new"><a href="/skills">Калькулятор умений</a>
 				<ul>
-					<li><a href="#">Ассасин</a></li>
-					<li><a href="#">Блейдмастер</a></li>
-					<li><a href="#">Лин-блейдмастер</a></li>
-					<li><a href="#">Форсмастер</a></li>
-					<li><a href="#">Саммонер</a></li>
-					<li><a href="#">Дестроер</a></li>
+					<li><a href="/skills/asn">Ассасин</a></li>
+					<li><a href="/skills/bm">Мастер клинка</a></li>
+					<li><a href="/skills/lsm">Лин мастер клинка</a></li>
+					<li><a href="/skills/sum">Мастер призыва</a></li>
+					<li><a href="/skills/des">Мастер секиры</a></li>
+					<li><a href="/skills/kfm">Кунг-фу мастер</a></li>
+					<li><a href="/skills/fm">Мастер стихий</a></li>
 				</ul>
-			</li-->
+			</li>
 			<li ><a href="/map">Карта игры</a>
 				<ul>
 					<li><a href="/map#f">Диковинный лес</a></li>
@@ -101,6 +103,63 @@
 		</ul>
 		</div>
 	</div>
+	<div id="mobile_header_wrap">
+		<div class="mh_header">
+			<p><a href="/">BnS Base</a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			 — бижутерия до 45 уровня
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div id="mh_control" onclick="toggleMobileHead()">►</div>
+		</div>
+		<div class="mh_links">
+			<p>Об игре</p>
+			<a href="/aboutgame/start">Как начать играть</a>
+			<a href="/aboutgame/morf">Что такое морф</a>
+			<p>Оружие</p>
+			<a href="/equip/weapons/under45">До 45 уровня</a>
+			<a href="/equip/weapons/on45">На 45</a>
+			<p>Бижутерия</p>
+			<a href="/equip/accessory/under45">До 45 уровня</a>
+			<a href="/equip/accessory/on45">На 45</a>
+			<p>Скрижали</p>
+			<a href="/equip/plains/under45">До 45 уровня</a>
+			<a href="/equip/plains/on45">На 45</a>
+			<a href="/equip/plains/list">Характеристики скрижалей</a>
+			<a href="/equip/plains/powerup">Заточка скрижалей</a>
+			<p>Крафт</p>
+			<a href="/craft/general">Особенности крафта</a>
+			<a href="/craft/actual">Актуальные професии</a>
+			<a href="/craft/ingredients">Ингредиенты</a>
+		</div>
+	</div>
+	<script>
+	function toggleMobileHead(){
+		mobile_header_wrap.classList.toggle('mhw_open')
+	}
+
+	</script>
+	
 </div>
 </nav>
 <div class="content">
@@ -115,7 +174,7 @@
 <link rel="stylesheet" href="/static/css/textpages/morftree.css" type="text/css">
 <link rel="stylesheet" href="/static/css/textpages/textpage.css" type="text/css">
 <link rel="stylesheet" href="/static/css/textpages/weps.css" type="text/css">
-<link rel="stylesheet" href="/static/css/textpages/mobileText.css" type="text/css">
+
 
 
 <div class="page"> 
@@ -172,7 +231,9 @@
 			</div>
 		</div>
 	</div>
-
+	<p class="seealso">
+		Смотрите также <a href="/equip/accessory/on45/">Бижутерия на 45 уровне</a>, <a href="/equip/weapons/under45/">Оружие до 45 уровня</a>, <a href="/equip/plains/under45/">Скрижали до 45 уровня</a>
+	</a>
 	<p class="author">
 	— Katyasha
 	</p>
@@ -219,7 +280,13 @@
 		<!--a href="/suggest">Предложить статью</a-->
 		<a href="https://twitter.com/BnSBase">Твиттер</a>
 	</div>
+	<div class="mobile_footer_wrap">
+		<a href="/about">О сайте</a>
+		<a href="/sitemap">Карта сайта</a>
+		<a href="https://twitter.com/BnSBase">Твиттер</a>
+	</div>
 </div>
+
 
 <div id="fake_top_panel" class="hidden">
 	<div class="ftop_inner">
@@ -295,7 +362,19 @@
 						<li><a href="/craft/ingredients/agriculture">Земледелие</a></li>
 					</ul>
 				</li>
-
+				
+				<li class="ul_heading">
+					<a href="/skills">Калькуляторы умений</a>
+				</li>
+				
+				<li><a href="/skills/asn">Ассасин</a></li>
+				<li><a href="/skills/bm">Мастер клинка</a></li>
+				<li><a href="/skills/lsm">Лин мастер клинка</a></li>
+				<li><a href="/skills/sum">Мастер призыва</a></li>
+				<li><a href="/skills/des">Мастер секиры</a></li>
+				<li><a href="/skills/kfm">Кунг-фу мастер</a></li>
+				<li><a href="/skills/fm">Мастер стихий</a></li>
+				
 				<li class="ul_heading">
 					<a href="/map">Карта игры</a>
 				</li>
@@ -314,6 +393,7 @@ ulwrap.style.height= document.body.clientHeight - 250+'px'
 
 
 <!-- Yandex.Metrika counter -->
+<noscript><div><img src="//mc.yandex.ru/watch/25076411" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <script type="text/javascript">
 (function (d, w, c) {
     (w[c] = w[c] || []).push(function() {
@@ -337,8 +417,14 @@ ulwrap.style.height= document.body.clientHeight - 250+'px'
         d.addEventListener("DOMContentLoaded", f, false);
     } else { f(); }
 })(document, window, "yandex_metrika_callbacks");
+<!-- /Google counter -->
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-20573745-2', 'auto');
+  ga('send', 'pageview');
 </script>
-<noscript><div><img src="//mc.yandex.ru/watch/25076411" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </body>
 </html>

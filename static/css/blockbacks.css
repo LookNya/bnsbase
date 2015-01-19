@@ -1,6 +1,11 @@
 .tiles>div>div{
 	background-size: 980px;
 }
+.tiles>div>div:hover{
+	-webkit-filter: brightness(0.9);	
+}
+
+
 .bb1>div{
 	background: url('/img/bb/1.jpg');
 }
@@ -13,6 +18,7 @@
 
 .bb2>div{
 	background: url('/img/bb/2.jpg');
+	transition: all 0.1s ease-in;
 }
 .bb2>div:nth-child(2){
 	background-position: 500px 0;
@@ -83,4 +89,31 @@
 }
 .bb8>div:nth-child(7){
 	background-position: -786px 0;
+}
+
+.bb9>div{
+	background: url('/img/bb/9.jpg');
+}
+.bb9>div:nth-child(3){
+	background-position: 0% -270px;
+}
+.bb9>div:nth-child(4){
+	background-position: 0% -270px;
+}
+.bb9>div:nth-child(5){
+	background-position: 0% -540px;
+}
+.bb9>div:nth-child(6){
+	background-position: 0% -540px;
+}
+.bb9>div:nth-child(7){
+	background-position: 0 -810px;
+}
+.bb9>div:nth-child(even){
+	background-position-x: -500px;
+}
+
+.bb10>div{
+	background: url('/img/bb/10.jpg');
+	background-position: 0px -20px;x;
 }

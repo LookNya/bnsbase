@@ -162,6 +162,10 @@ h4{
 .hb_curr> a{
 	color: rgb(199, 235, 245)!important;
 }
+.hb_new> a, .hb_new:hover> a{
+	color: rgb(255, 232, 0)!important;
+}
+
 /*Обнуляем отступы*/
 #menu  ul, #menu li {
 z-index: 9999;
@@ -206,9 +210,9 @@ z-index: 9999;
 	background: #5CA3F1;
 	width: 150px;
 }
- #menu > li > ul > li >a{
+#menu > li > ul > li >a{
  	padding:10px;
- }
+}
 /*Делаем скрытую часть видимой*/
 #menu > li:hover > ul {
 	visibility:visible;

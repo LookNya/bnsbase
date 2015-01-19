@@ -6,14 +6,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="HandheldFriendly" content="true">
 	<meta property="og:site_name" content="bnsbase.com"/>
-	<meta property = "og:title" content = "undefined" />
+	<meta property = "og:title" content = "Калькулятор умений" />
 	<meta property="og:image" content="/img/scover.jpg" />
 	<meta property = "og:type" content = "article" />
 	
+	<meta property = "og:description" content = "Где искать ингредиенты для крафта." />
+	<meta property = "description" content = "Где искать ингредиенты для крафта." />
 	
+	<meta name="keywords" content="bnsbase, blade and soul, блейд энд соул, bns, playbns, база знаний, каталог гайдов, гайды, калькулятор умений" />
 	<link rel="shortcut icon" href="/img/favicon.png">
 	<link rel="stylesheet" href="/static/css/main.css" type="text/css" />
-	<title>undefined</title>
+	<link rel="stylesheet" href="/static/css/mobile.css" type="text/css" />
+	<title>Калькулятор умений — база знаний Blade and Soul</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -78,16 +82,17 @@
 					<li><a href="/craft/ingredients/agriculture">Земледелие</a></li>
 				</ul>
 			</li>
-			<!--li ><a href="#">Калькулятор умений</a>
+			<li  class="hb_curr hb_new"><a href="/skills">Калькулятор умений</a>
 				<ul>
-					<li><a href="#">Ассасин</a></li>
-					<li><a href="#">Блейдмастер</a></li>
-					<li><a href="#">Лин-блейдмастер</a></li>
-					<li><a href="#">Форсмастер</a></li>
-					<li><a href="#">Саммонер</a></li>
-					<li><a href="#">Дестроер</a></li>
+					<li><a href="/skills/asn">Ассасин</a></li>
+					<li><a href="/skills/bm">Мастер клинка</a></li>
+					<li><a href="/skills/lsm">Лин мастер клинка</a></li>
+					<li><a href="/skills/sum">Мастер призыва</a></li>
+					<li><a href="/skills/des">Мастер секиры</a></li>
+					<li><a href="/skills/kfm">Кунг-фу мастер</a></li>
+					<li><a href="/skills/fm">Мастер стихий</a></li>
 				</ul>
-			</li-->
+			</li>
 			<li ><a href="/map">Карта игры</a>
 				<ul>
 					<li><a href="/map#f">Диковинный лес</a></li>
@@ -98,75 +103,144 @@
 		</ul>
 		</div>
 	</div>
+	<div id="mobile_header_wrap">
+		<div class="mh_header">
+			<p><a href="/">BnS Base</a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div id="mh_control" onclick="toggleMobileHead()">►</div>
+		</div>
+		<div class="mh_links">
+			<p>Об игре</p>
+			<a href="/aboutgame/start">Как начать играть</a>
+			<a href="/aboutgame/morf">Что такое морф</a>
+			<p>Оружие</p>
+			<a href="/equip/weapons/under45">До 45 уровня</a>
+			<a href="/equip/weapons/on45">На 45</a>
+			<p>Бижутерия</p>
+			<a href="/equip/accessory/under45">До 45 уровня</a>
+			<a href="/equip/accessory/on45">На 45</a>
+			<p>Скрижали</p>
+			<a href="/equip/plains/under45">До 45 уровня</a>
+			<a href="/equip/plains/on45">На 45</a>
+			<a href="/equip/plains/list">Характеристики скрижалей</a>
+			<a href="/equip/plains/powerup">Заточка скрижалей</a>
+			<p>Крафт</p>
+			<a href="/craft/general">Особенности крафта</a>
+			<a href="/craft/actual">Актуальные професии</a>
+			<a href="/craft/ingredients">Ингредиенты</a>
+		</div>
+	</div>
+	<script>
+	function toggleMobileHead(){
+		mobile_header_wrap.classList.toggle('mhw_open')
+	}
+
+	</script>
+	
 </div>
 </nav>
 <div class="content">
-	<html>
-<head>
- <link rel="shortcut icon" href="http://i.imgur.com/3eeC8AW.png">
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width">
- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
- <meta name="HandheldFriendly" content="true">
+	
 
- <link rel="stylesheet" href="style.css">
- <script>
- 	//["script[src='skillslist.js']", "script[src='skillsdata.js']"].forEach(function(qs) {
- 	//	document.querySelector(qs).getAttribute('src').replace(/\.js/, "_"+location.hash.substr(1)+".js");
- 	//});
- 	["skillslist", "skillsdata"].forEach(function(name) {
- 		var scr = document.createElement('script');
- 		scr.src = name + "_" + location.search.substr(1) + ".js";
- 		document.head.appendChild(scr);
- 	});
- </script>
-<!-- <script src="skillsdata.js"></script>-->
-<!-- <script src="skillslist.js"></script>-->
- <script src="utils.js"></script>
- <script src="ui.js"></script>
- <script src="engine.js"></script>
- <style>
- .effect_group {
-   margin: 4px;
-   outline: 1px solid;
- }
- </style>
-</head>
-<body>
-<div class="calc_container">
-	<div class="content" id='content'>
-		<div id="counter"></div>
-		<div class="skills_list_container f_l">
-			<div class="items_search">
-				<div class="search_form_wrap">
-					<div class="f_l">
-						Поиск умения
+	
+	
+
+<link rel="stylesheet" href="/static/css/textpages/textpage.css" type="text/css">
+<link rel="stylesheet" href="/static/css/sub_main_page.css" type="text/css">
+<link rel="stylesheet" href="/static/css/blockbacks.css" type="text/css">
+
+		<div class="blocks">
+			<div class="blocks_wrap">
+				<div class="block_line">
+					<h2>Калькуляторы умений</h2>
+					<div class="tiles ingr">
+						<div class="t_7_c bb9">
+							<div>
+								<a href="/skills/asn">
+									<p>Ассасин</p>
+								</a>
+							</div>
+							<div>
+								<a href="/skills/bm">
+									<p>Мастер клинка</p>
+								</a>
+							</div>
+							<div>
+								<a href="/skills/lsm">
+									<p>Мастер клинка линов</p>
+								</a>
+							</div>
+							<div>
+								<a href="/skills/sum">
+									<p>Мастер призыва</p>
+								</a>
+							</div>
+							<div>
+								<a href="/skills/des">
+									<p>Мастер секиры</p>
+								</a>
+							</div>
+							<div>
+								<a href="/skills/kfm">
+									<p>Кунг-фу мастер</p>
+								</a>
+							</div>
+							<div>
+								<a href="/skills/fm">
+									<p>Мастер стихий</p>
+								</a>
+							</div>
+						</div>
 					</div>
-					<div class="f_l">
-						<input id="search_input" class="f_l" value=""></input>
+					<div class="ingr_mobile">
+						<a href="/skills/asn">
+							Ассасин
+						</a>
+						<a href="/skills/bm">
+							Мастер клинка
+						</a>
+						<a href="/skills/lsm">
+							Мастер клинка линов
+						</a>
+						<a href="/skills/sum">
+							Мастер призыва
+						</a>
+						<a href="/skills/des">
+							Мастер секиры
+						</a>
+						<a href="/skills/kfm">
+							Кунг-фу мастер
+						</a>
+						<a href="/skills/fm">
+							Мастер стихий
+						</a>
 					</div>
 				</div>
 			</div>
-			<div id="skills_list_wrap">
-			</div>
 		</div>
-		<div class="f_l" id="skills_tree_wrap"></div>
-		<button id="reset_all_but">reset all</button>
-		<button id="reset_tree_but">reset tree</button>
-		<div class="f_l" id="skills_info_wrap">
-			<div id="subskill_name_box"></div>
-			Стоимость: <div class="effect_group effect_group_cost"></div>
-			Дамаг: <div class="effect_group effect_group_damage"></div>
-			Радиус: <div class="effect_group effect_group_radius"></div>
-			Дистанция: <div class="effect_group effect_group_range"></div>
-			Всякое: <div class="effect_group effect_group_attribute"></div>
-			Перезарядка: <div class="effect_group effect_group_cooldown"></div>
-		</div>
-	</div>
-</div>
-</body>
-</html>
-
 	
 	
 </div>
@@ -179,9 +253,16 @@
 		<!--a href="/suggest">Предложить статью</a-->
 		<a href="https://twitter.com/BnSBase">Твиттер</a>
 	</div>
+	<div class="mobile_footer_wrap">
+		<a href="/about">О сайте</a>
+		<a href="/sitemap">Карта сайта</a>
+		<a href="https://twitter.com/BnSBase">Твиттер</a>
+	</div>
 </div>
 
+
 <!-- Yandex.Metrika counter -->
+<noscript><div><img src="//mc.yandex.ru/watch/25076411" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <script type="text/javascript">
 (function (d, w, c) {
     (w[c] = w[c] || []).push(function() {
@@ -205,8 +286,14 @@
         d.addEventListener("DOMContentLoaded", f, false);
     } else { f(); }
 })(document, window, "yandex_metrika_callbacks");
+<!-- /Google counter -->
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-20573745-2', 'auto');
+  ga('send', 'pageview');
 </script>
-<noscript><div><img src="//mc.yandex.ru/watch/25076411" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </body>
 </html>

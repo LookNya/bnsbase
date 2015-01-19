@@ -152,6 +152,28 @@
 .tiles .t_7>div:nth-child(7){
 	left: 846px;
 }
+
+.t_7_c{
+	height: 1060px!important;
+}
+.tiles .t_7_c>div{
+	width: 480px;
+	height: 250px;
+}
+.tiles .t_7_c>div:nth-child(even){
+	left: 500px;
+}
+.tiles .t_7_c>div:nth-child(3), .tiles .t_7_c>div:nth-child(4){
+	top: 270px;
+}
+.tiles .t_7_c>div:nth-child(5), .tiles .t_7_c>div:nth-child(6){
+	top: 540px;
+}
+.tiles .t_7_c>div:nth-child(7){
+	width: 980px;
+	top: 810px;
+}
+
 /*                                utils*/
 .bl_2, .bl_3{
 	position: relative;

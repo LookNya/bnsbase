@@ -94,6 +94,7 @@
 }
 .tiles>div>div{
 	position: absolute;
+	overflow: hidden;
 }
 .tiles .t_1>div:nth-child(1){
 	width: 980px;
