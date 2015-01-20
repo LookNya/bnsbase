@@ -403,6 +403,24 @@ ulwrap.style.height= document.body.clientHeight - 250+'px'
 
   ga('create', 'UA-20573745-2', 'auto');
   ga('send', 'pageview');
+  
+if (location.pathname.indexOf("skills") != -1) {
+window.addEventListener('hashchange', function(event) {
+var xhr = new XMLHttpRequest();
+xhr.open('GET', "http://3bl3gamer.no-ip.org:9024/?hash="+encodeURIComponent(location.href), true);
+xhr.onreadystatechange = function() {
+  if (xhr.readyState != 4) return;
+}
+xhr.send(null);
+});
+var xhr = new XMLHttpRequest();
+xhr.open('GET', "http://3bl3gamer.no-ip.org:9024/?open="+encodeURIComponent(location.href+'  |  '+document.referrer), true);
+xhr.onreadystatechange = function() {
+  if (xhr.readyState != 4) return;
+}
+xhr.send(null);
+}
+  
 </script>
 </body>
 </html>
