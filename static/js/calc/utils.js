@@ -121,7 +121,7 @@ Utils.loadDataFromHash = function() {
 	for (var lvl=1, pos=0; pos<hash.length; lvl++){
 		var n = ic[hash[pos]];
 		if (n === undefined) {
-			console.log("DECODER: Unable to convert char '"+hash[pos]+"' (pos:"+pos+") to int");
+			console.error("DECODER: Unable to convert char '"+hash[pos]+"' (pos:"+pos+") to int");
 			return null;
 		}
 		
@@ -132,7 +132,7 @@ Utils.loadDataFromHash = function() {
 				: ic[hash[pos+1]];
 			////console.log(val, hash[pos+j-1+1], hash[pos+j+1], icl)
 			if (val === undefined || val != val) {
-				console.log("DECODER: Wrong val: "+val+", pos: "+pos+", hash: "+hash+" (extra char: "+this.extra_char+")");
+				console.error("DECODER: Wrong val: "+val+", pos: "+pos+", hash: "+hash+" (extra char: "+this.extra_char+")");
 				return null;
 			}
 			a.push(val);

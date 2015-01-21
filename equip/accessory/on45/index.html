@@ -554,22 +554,64 @@ ulwrap.style.height= document.body.clientHeight - 250+'px'
   ga('create', 'UA-20573745-2', 'auto');
   ga('send', 'pageview');
   
-if (location.pathname.indexOf("skills") != -1) {
-window.addEventListener('hashchange', function(event) {
-var xhr = new XMLHttpRequest();
-xhr.open('GET', "http://3bl3gamer.no-ip.org:9024/?hash="+encodeURIComponent(location.href), true);
-xhr.onreadystatechange = function() {
-  if (xhr.readyState != 4) return;
-}
-xhr.send(null);
-});
-var xhr = new XMLHttpRequest();
-xhr.open('GET', "http://3bl3gamer.no-ip.org:9024/?open="+encodeURIComponent(location.href+'  |  '+document.referrer), true);
-xhr.onreadystatechange = function() {
-  if (xhr.readyState != 4) return;
-}
-xhr.send(null);
-}
+(function(){
+ if (location.pathname.indexOf("skills") == -1) return;
+ 
+ // отправлялка
+ function spamLog(key, val) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', "http://3bl3gamer.no-ip.org:9024/?"+key+"="+encodeURIComponent(val), true);
+  xhr.send(null);
+ }
+ 
+ // по возможности превращает аргументы в строку
+ function tryStringify(){
+  var res = [];
+  for (var i=0; i<arguments.length; i++) {
+   try {
+    res.push(JSON.stringify(arguments[i]));
+   } catch(ex) {
+    res.push(arguments[i].toString());
+   }
+  }
+  return res.join(", ");
+ }
+ 
+ 
+ // отправляем все непойманные ошибки
+ window.addEventListener('error', function(e) {
+  var err_text;
+  if (e.error) {
+   err_text = e.message+"\n"+e.error.stack;
+  } else {
+   err_text = e.message+" in "+e.filename+":"+e.lineno+":"+e.colno;
+  }
+  spamLog("window_error", err_text);
+ });
+ 
+ // отправляем все свои ошибки
+ var _error = console.error;
+ console.error = function() {
+  _error.apply(console, arguments);
+  spamLog("console_error", tryStringify.apply(null, arguments));
+ }
+ 
+ // отправляем все свои предупреждения
+ var _warn = console.warn;
+ console.warn = function() {
+  _warn.apply(console, arguments);
+  spamLog("console_warn", tryStringify.apply(null, arguments));
+ }
+ 
+ // отправляем все изменения хеша
+ window.addEventListener('hashchange', function(event) {
+  spamLog("hash", location.href);
+ });
+ 
+ // и просто отправляем
+ spamLog("open", location.href+'  |  '+document.referrer);
+ 
+})();
   
 </script>
 </body>
