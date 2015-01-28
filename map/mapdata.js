@@ -1351,7 +1351,7 @@ var items_description = {
             "name": "Кольцо линов"
                 //"full_list":""
         }]
-    },
+    },/*
 	    "p28": {
         "title": "Темная бухта акулы",
         "searchable": true,
