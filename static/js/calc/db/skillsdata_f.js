@@ -1304,7 +1304,7 @@ skills_data = {
 		img: "/img/sc/f/15.jpg",
 	},
 	"tree_16|root": {
-		name: "Избаление",
+		name: "Избавление",
 		relations: [64],
 		effects: {
 			damage: "54-66 ед. урона",
@@ -1319,7 +1319,7 @@ skills_data = {
 		img: "/img/sc/f/16.jpg",
 	},
 	"tree_16|64": {
-		name: "Избаление",
+		name: "Избавление",
 		max_lvl: 1,
 		relations: [65, 66, 67],
 		effects: {
@@ -1336,7 +1336,7 @@ skills_data = {
 		},
 	},
 	"tree_16|65": {
-		name: "Избаление",
+		name: "Избавление",
 		max_lvl: 1,
 		relations: [68],
 		effects: {
@@ -1355,7 +1355,7 @@ skills_data = {
 		},
 	},
 	"tree_16|66": {
-		name: "Избаление",
+		name: "Избавление",
 		max_lvl: 1,
 		relations: [69],
 		effects: {
@@ -1373,7 +1373,7 @@ skills_data = {
 		},
 	},
 	"tree_16|67": {
-		name: "Избаление",
+		name: "Избавление",
 		max_lvl: 1,
 		relations: [70],
 		effects: {
@@ -1391,7 +1391,7 @@ skills_data = {
 		},
 	},
 	"tree_16|68": {
-		name: "Избаление",
+		name: "Избавление",
 		max_lvl: 1,
 		relations: [71],
 		effects: {
@@ -1411,7 +1411,7 @@ skills_data = {
 		},
 	},
 	"tree_16|69": {
-		name: "Избаление",
+		name: "Избавление",
 		max_lvl: 1,
 		relations: [72],
 		effects: {
@@ -1430,7 +1430,7 @@ skills_data = {
 		},
 	},
 	"tree_16|70": {
-		name: "Избаление",
+		name: "Избавление",
 		max_lvl: 1,
 		relations: [73],
 		effects: {
@@ -1449,7 +1449,7 @@ skills_data = {
 		},
 	},
 	"tree_16|71": {
-		name: "Избаление",
+		name: "Избавление",
 		max_lvl: 1,
 		legendary: true,
 		effects: {
@@ -1470,7 +1470,7 @@ skills_data = {
 		},
 	},
 	"tree_16|72": {
-		name: "Избаление",
+		name: "Избавление",
 		max_lvl: 1,
 		legendary: true,
 		effects: {
@@ -1490,7 +1490,7 @@ skills_data = {
 		},
 	},
 	"tree_16|73": {
-		name: "Избаление",
+		name: "Избавление",
 		max_lvl: 1,
 		legendary: true,
 		effects: {
