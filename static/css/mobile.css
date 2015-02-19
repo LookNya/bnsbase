@@ -253,10 +253,10 @@
 	white-space: nowrap;
 }
 */
-.bnsbt1 tr{
+.bnsbt1 tr,.tree_line_wrap{
 	display: none;
 }
-.bnsbt1:after{
+.bnsbt1:after,.tree_line_wrap:after{
 	color: grey;
 	content: "Таблица отображается только в полной версии сайта.";
 	font-style: italic;

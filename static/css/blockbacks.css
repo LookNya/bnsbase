@@ -23,6 +23,9 @@
 .bb2>div:nth-child(2){
 	background-position: 500px 0;
 }
+.bb2>div:nth-child(3){
+	background-position: 500px 37%;
+}
 
 .bb3>div{
 	background: url('/img/bb/3.jpg');
