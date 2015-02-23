@@ -138,6 +138,14 @@
 	background: url('http://i.imgur.com/Y3WA0Ov.png');
 	background-size: cover;
 }
+.wep_19{
+	background: url('/img/idb/wep/21.jpg');
+	background-size: cover;
+}
+.wep_20{
+	background: url('/img/22.jpg');
+	background-size: cover;
+}
 /*                    catalysts                      */
 .ca_1{
 	background: green;
