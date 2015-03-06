@@ -22,6 +22,9 @@
   <loc>http://bnsbase.com/aboutgame/phmorf/</loc>
 </url>
 <url>
+  <loc>http://bnsbase.com/aboutgame/stats/</loc>
+</url>
+<url>
   <loc>http://bnsbase.com/equip/</loc>
 </url>
 <url>
@@ -94,6 +97,9 @@
   <loc>http://bnsbase.com/craft/ingredients/oremining/</loc>
 </url>
 <url>
+  <loc>http://bnsbase.com/craft/ingredients/hunting/</loc>
+</url>
+<url>
   <loc>http://bnsbase.com/skills/</loc>
 </url>
 <url>
@@ -125,8 +131,5 @@
 </url>
 <url>
   <loc>http://bnsbase.com/sitemap/</loc>
-</url>
-<url>
-  <loc>http://bnsbase.com/craft/ingredients/hunting/</loc>
 </url>
 </urlset>

@@ -33,6 +33,68 @@ function anchorClick(e){
 			}
 		}
 	}
+}
+function SmothScrollTo(pos){
+	scrollTo(0,pos)
+}
+function onPCclick(e){
+	if(e.target.tagName=='a'||e.target.tagName=='A') return
+	if(page_contents.className == 'pc_js pc_maximized pc_visible'){
+		page_contents.className = 'pc_js pc_minimized pc_visible'
+	} else{
+		page_contents.className = 'pc_js pc_maximized pc_visible'	
+	}
+}
+
+function onScroll() {
+	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+	var pageTop = getOffsetRect(document.getElementsByClassName('page')[0]).top//130 by default
+	try{
+	if(scrolled>(pageTop+140) && fake_top_panel.className!="ftp_visible"){
+		fake_top_panel.className="ftp_visible"
+	} else if(scrolled<(pageTop+140)){
+		fake_top_panel.className="ftp_hidden"
+		fake_pages_list.className="hidden"
+	}
+	}catch(e){}
+	if(scrolled<(pageTop+133) && scrolledOnlyDown){
+		page_contents.style.top = (pageTop+50)-scrolled+'px'
+		if(page_contents.className == 'pc_js pc_maximized pc_visible'){
+			scrolledOnlyDown = false
+		}
+		if(page_contents.className == 'pc_js pc_minimized pc_hidden'){
+			scrolledOnlyDown = true
+		}
+	} else {	
+	if (prevScrolPos<scrolled && page_contents.className == 'pc_js pc_minimized pc_visible'){
+			page_contents.style.top = (pageTop+50)-scrolled+'px'
+			page_contents.className = 'pc_js pc_minimized pc_hidden'	
+		}
+		if (prevScrolPos>scrolled && page_contents.className == 'pc_js pc_minimized pc_hidden'){
+			page_contents.className = 'pc_js pc_minimized pc_visible'
+			scrolledOnlyDown = false
+		}
+		if((pageTop+50)-scrolled>(pageTop-30)){
+			page_contents.style.top = (pageTop+50)-scrolled+'px'
+			scrolledOnlyDown = true
+		} else{
+			if(!scrolledOnlyDown && scrolled!=0){
+				page_contents.style.top = (pageTop-30)+'px'
+			}
+		}
+	}
+	prevScrolPos = scrolled
+}
+function togglePagesList(){
+	if(fake_pages_list.className=="hidden"){
+		fake_pages_list.className="fpl_visible"
+	} else if(fake_pages_list.className=="fpl_visible"){
+		fake_pages_list.className="fpl_hidden"
+	} else if(fake_pages_list.className=="fpl_hidden"){
+		fake_pages_list.className="fpl_visible"
+	}
+}
+
 	function getOffset(elem) {
 		if (elem.getBoundingClientRect) {
 			// "правильный" вариант
@@ -73,63 +135,3 @@ function anchorClick(e){
 
 		return { top: Math.round(top), left: Math.round(left) }
 	}
-}
-function SmothScrollTo(pos){
-	scrollTo(0,pos)
-}
-function onPCclick(e){
-	if(e.target.tagName=='a'||e.target.tagName=='A') return
-	if(page_contents.className == 'pc_js pc_maximized pc_visible'){
-		page_contents.className = 'pc_js pc_minimized pc_visible'
-	} else{
-		page_contents.className = 'pc_js pc_maximized pc_visible'	
-	}
-}
-
-function onScroll() {
-	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-	try{
-	if(scrolled>270 && fake_top_panel.className!="ftp_visible"){
-		fake_top_panel.className="ftp_visible"
-	} else if(scrolled<270){
-		fake_top_panel.className="ftp_hidden"
-		fake_pages_list.className="hidden"
-	}
-	}catch(e){}
-	if(scrolled<263 && scrolledOnlyDown){
-		page_contents.style.top = 180-scrolled+'px'
-		if(page_contents.className == 'pc_js pc_maximized pc_visible'){
-			scrolledOnlyDown = false
-		}
-		if(page_contents.className == 'pc_js pc_minimized pc_hidden'){
-			scrolledOnlyDown = true
-		}
-	} else {	
-	if (prevScrolPos<scrolled && page_contents.className == 'pc_js pc_minimized pc_visible'){
-			page_contents.style.top = 180-scrolled+'px'
-			page_contents.className = 'pc_js pc_minimized pc_hidden'	
-		}
-		if (prevScrolPos>scrolled && page_contents.className == 'pc_js pc_minimized pc_hidden'){
-			page_contents.className = 'pc_js pc_minimized pc_visible'
-			scrolledOnlyDown = false
-		}
-		if(180-scrolled>100){
-			page_contents.style.top = 180-scrolled+'px'
-			scrolledOnlyDown = true
-		} else{
-			if(!scrolledOnlyDown && scrolled!=0){
-				page_contents.style.top = 100+'px'
-			}
-		}
-	}
-	prevScrolPos = scrolled
-}
-function togglePagesList(){
-	if(fake_pages_list.className=="hidden"){
-		fake_pages_list.className="fpl_visible"
-	} else if(fake_pages_list.className=="fpl_visible"){
-		fake_pages_list.className="fpl_hidden"
-	} else if(fake_pages_list.className=="fpl_hidden"){
-		fake_pages_list.className="fpl_visible"
-	}
-}

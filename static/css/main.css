@@ -591,3 +591,31 @@ z-index: 9999;
 .hc_footer{
 	display: none!important;
 }
+/*                                                         adds */
+.top_adds_wrap{
+	padding-top: 20px;
+	display: none;
+}
+.top_adds_content{
+	width: 980Px;
+	height: 100px;
+	background: black;
+	margin: 0 auto;
+}
+.bottom_adds_wrap{
+	padding-top: 50px;
+	padding-bottom: 20px;
+	display: none;
+}
+.bottom_adds_content{
+	width: 980Px;
+	height: 100px;
+	background: black;
+	margin: 0 auto;
+}
+.adds_enabled .top_adds_wrap ,.adds_enabled .bottom_adds_wrap{
+	display: block;
+}
+.adds_enabled .page{
+	margin-top: 40px;
+}

@@ -10,9 +10,12 @@
 	background: url('/img/bb/1.jpg');
 }
 .bb1>div:nth-child(2){
-	background-position: 500px 0;
+	background-position: 0 37%;
 }
 .bb1>div:nth-child(3){
+	background-position: 500px 0;
+}
+.bb1>div:nth-child(4){
 	background-position: 500px 37%;
 }
 

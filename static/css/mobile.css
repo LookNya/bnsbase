@@ -323,6 +323,9 @@
 	left: 10px;
 	font-style: italic;
 }
-
+/*                                                adds */
+.top_adds_wrap,.bottom_adds_wrap{
+	display: none!important;
+}
 
 }
