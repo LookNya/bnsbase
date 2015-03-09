@@ -619,3 +619,35 @@ z-index: 9999;
 .adds_enabled .page{
 	margin-top: 40px;
 }
+/*                                                 site contents */
+.site_contents_table{
+	display: none;
+}
+.page .site_contents_table{
+	display: block;
+}
+.site_contents_table{
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0px 40px;
+}
+.site_contents_table>table{
+	width: 100%;
+}
+.site_contents_table table tr:nth-child(1) {
+	text-align: center;
+}
+.site_contents_table table td{
+	line-height: normal!important;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.site_contents_table a {
+	display: inline-block;
+	padding-left: 15px;
+	text-transform: lowercase;
+}
+.site_contents_table  a[href*="map"]:after{
+	display: none!important;
+}

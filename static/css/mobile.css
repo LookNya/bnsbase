@@ -10,6 +10,9 @@
 .mobile_calc{
 	display: none;
 }
+.planes_mobile{
+	display: none;
+}
 @media (min-width: 0px) and (max-width: 760px) {
 /*                                          mobile */
 /*                                          site header */
@@ -241,6 +244,9 @@
 	padding-bottom: 5px;
 	
 }
+.ca_wrap{
+	width: 100%!important;
+}
 /*.bnsbt1{
 	table-layout: fixed;
 }
@@ -322,6 +328,15 @@
 	top: 0px;
 	left: 10px;
 	font-style: italic;
+}
+.planes_mobile{
+	display: block;
+}
+.planes_desctop{
+	display: none;
+}
+.site_contents_table{
+	display: none!important;
 }
 /*                                                adds */
 .top_adds_wrap,.bottom_adds_wrap{
