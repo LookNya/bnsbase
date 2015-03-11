@@ -1,0 +1,489 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- saved from url=(0014)about:internet -->
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<meta property="og:site_name" content="bnsbase.com"/>
+	<meta property = "og:title" content = "Мастер клинка — калькулятор умений" />
+	<meta property="og:image" content="/img/scover.jpg" />
+	<meta property = "og:type" content = "article" />
+	
+	<meta property = "og:description" content = "Калькулятор умений класса мастер клинка — wiki база знаний Blade and Soul" />
+	<meta property = "description" content = "Калькулятор умений класса мастер клинка — wiki база знаний Blade and Soul" />
+	
+	<meta name="keywords" content="bnsbase, blade and soul, блейд энд соул, bns, playbns, база знаний, каталог гайдов, гайды, калькулятор умений" />
+	<script src = "/static/js/calc/db/skillslist_b.js"></script>
+	<script src = "/static/js/calc/db/skillsdata_b.js"></script>
+	<script src="/static/js/calc/utils.js"></script>
+	<script src="/static/js/calc/ui.js"></script>
+	<link rel="shortcut icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="/static/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/static/css/mobile.css" type="text/css" />
+	<title>Мастер клинка — калькулятор умений — база знаний Blade and Soul wiki, лучшие гайды</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+<body class="adds_enabled">
+<nav>
+<div class="header">
+	<div class="header_wrap">
+		<div class="header_logo f_l"><a href="/">BnS Base</a></div>
+		<!--div class="header_search f_r">Поиск </div-->
+		<div class="header_nav">
+		<ul id="menu">
+			<li  ><a href="/aboutgame">Об игре</a>
+				<ul>
+					<li><a href="/aboutgame/start">Как начать играть</a></li>
+					<li><a href="/aboutgame/morf">Что такое морф</a></li>
+					<li><a href="/aboutgame/phmorf">Дерево морфа оружия Пути Хона</a></li>
+					<li><a href="/aboutgame/stats">Характеристики персонажа</a></li>
+				</ul>
+			</li>
+			<!--li><a href="#">Классы</a>
+				<ul>
+					<li><a href="#">Ассасин</a></li>
+					<li><a href="#">Блейдмастер</a></li>
+					<li><a href="#">Лин-блейдмастер</a></li>
+					<li><a href="#">Форсмастер</a></li>
+					<li><a href="#">Саммонер</a></li>
+					<li><a href="#">Дестроер</a></li>
+				</ul>
+			</li-->
+			<li   ><a href="/equip">Экипировка</a>
+				<ul>
+					<li class="ul_heading"><a href="/equip/weapons">Оружие</a></li>
+					<li><a href="/equip/weapons/under45">До 45 уровня</a></li>
+					<li><a href="/equip/weapons/on45">На 45</a></li>
+					<li><a href="/equip/weapons/gems">Драгоценные камни</a></li>
+					<li class="ul_heading"><a href="/equip/accessory">Бижутерия</a></li>
+					<li><a href="/equip/accessory/under45">До 45 уровня</a></li>
+					<li><a href="/equip/accessory/on45">На 45</a></li>
+					<li class="ul_heading"><a href="/equip/bopae">Скрижали</a></li>
+					<li><a href="/equip/bopae/under45">До 45 уровня</a></li>
+					<li><a href="/equip/bopae/on45">На 45</a></li>
+					<li><a href="/equip/bopae/list">Характеристики скрижалей</a></li>
+					<li><a href="/equip/bopae/powerup">Заточка скрижалей</a></li>
+				</ul>
+			</li>
+			<li ><a href="/daily">Ежедневные квесты</a>
+				<ul>
+					<li><a href="/daily#forest">Диковинный лес</a></li>
+					<li><a href="/daily#desert">Пустыня</a></li>
+					<li><a href="/daily#plane">Равнина</a></li>
+				</ul>
+			</li>
+			<li ><a href="/craft">Крафт</a>
+				<ul>
+					<li><a href="/craft/general">Особенности крафта</a></li>
+					<li><a href="/craft/actual">Актуальные професии</a></li>
+					<li class="ul_heading"><a href="/craft/ingredients">Ингредиенты</a></li>
+					
+					<li><a href="/craft/ingredients/fishing">Рыбалка</a></li>
+					<li><a href="/craft/ingredients/farming">Фермерство</a></li>
+					<li><a href="/craft/ingredients/forestry">Сбор древесины</a></li>
+					<li><a href="/craft/ingredients/herbalism">Сбор трав</a></li>
+					<li><a href="/craft/ingredients/stonemining">Добыча камней</a></li>
+					<li><a href="/craft/ingredients/oremining">Добыча руды</a></li>
+					<li><a href="/craft/ingredients/hunting">Охота</a></li>
+				</ul>
+			</li>
+			<li  class="hb_curr hb_new"><a href="/skills">Калькулятор умений</a>
+				<ul>
+					<li><a href="/skills/asn">Ассасин</a></li>
+					<li><a href="/skills/bm">Мастер клинка</a></li>
+					<li><a href="/skills/lsm">Лин мастер клинка</a></li>
+					<li><a href="/skills/sum">Мастер призыва</a></li>
+					<li><a href="/skills/des">Мастер секиры</a></li>
+					<li><a href="/skills/kfm">Кунг-фу мастер</a></li>
+					<li><a href="/skills/fm">Мастер стихий</a></li>
+				</ul>
+			</li>
+			<li ><a href="/map">Карта игры</a>
+				<ul>
+					<li><a href="/map#f">Диковинный лес</a></li>
+					<li><a href="/map#d">Пустыня</a></li>
+					<li><a href="/map#p">Равнина</a></li>
+				</ul>
+			</li>
+		</ul>
+		</div>
+	</div>
+	<div id="mobile_header_wrap">
+		<div class="mh_header">
+			<p><a href="/">BnS Base</a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div id="mh_control" onclick="toggleMobileHead()">►</div>
+		</div>
+		<div class="mh_links">
+			<p>Об игре</p>
+			<a href="/aboutgame/start">Как начать играть</a>
+			<a href="/aboutgame/morf">Что такое морф</a>
+			<a href="/aboutgame/stats">Характеристики персонажа</a>
+			<p>Оружие</p>
+			<a href="/equip/weapons/under45">До 45 уровня</a>
+			<a href="/equip/weapons/on45">На 45</a>
+			<a href="/equip/weapons/gems">Драгоценные камни</a>
+			<p>Бижутерия</p>
+			<a href="/equip/accessory/under45">До 45 уровня</a>
+			<a href="/equip/accessory/on45">На 45</a>
+			<p>Скрижали</p>
+			<a href="/equip/bopae/under45">До 45 уровня</a>
+			<a href="/equip/bopae/on45">На 45</a>
+			<a href="/equip/bopae/list">Характеристики скрижалей</a>
+			<a href="/equip/bopae/powerup">Заточка скрижалей</a>
+			<p>Крафт</p>
+			<a href="/craft/general">Особенности крафта</a>
+			<a href="/craft/actual">Актуальные професии</a>
+			<a href="/craft/ingredients">Ингредиенты</a>
+		</div>
+	</div>
+	<script>
+	function toggleMobileHead(){
+		mobile_header_wrap.classList.toggle('mhw_open')
+	}
+
+	</script>
+	
+</div>
+</nav>
+
+<div class="top_adds_wrap">
+	<div class="top_adds_content">
+<!-- Яндекс.Директ -->
+<div id="yandex_ad"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(143348, "yandex_ad", {
+            ad_format: "direct",
+            font_size: 0.8,
+            type: "horizontal",
+            limit: 4,
+            title_font_size: 1,
+            links_underline: false,
+            site_bg_color: "FFFFFF",
+            title_color: "1568C4",
+            url_color: "006600",
+            text_color: "000000",
+            hover_color: "1568C4",
+            no_sitelinks: true
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script>
+	</div>
+</div>
+
+<div class="content">
+	
+ 
+ 
+
+
+	
+<link rel="stylesheet" href="/static/css/calc.css">
+<style>
+h1{
+	padding-top: 40px;
+	padding-left: 22px;
+	float: left;
+	font-size: 40px;
+}
+#hypercomments_widget {
+	padding: 0px!important;
+	margin-left: 17px;
+}
+</style>
+	<p class="mobile_calc">Эта страница отображается только в полной версии сайта.</p>
+	<div class="calc_content" id='content'>
+		<div>
+			<h1>Умения мастера клинка</h1>
+			<div class="calc_mode_selector">отобразить как <span class="selected_calc_mode" id="calcmodeCalc">калькулятор умений </span>или <span id="calcmodeBuild">только билд</span></div>
+			<br clear="all" />
+		</div>
+		<div id="calc_body" class="view_calc">
+			<div id="buildView">
+				<div id="buildViewContent">
+					<div id="buildViewBackBut">Вернуться к калькулятору</div>
+					<div id="buildViewHTML"></div>
+				</div>
+			</div>
+			<div class="skills_list_block">
+				<div class="ic_background"></div>
+				<div class="items_search">
+					<div class="search_form_wrap">
+						<div class="f_l search_title">Поиск умения</div>
+						<div class="f_l">
+							<input id="search_input" class="f_l"value="">
+						</div>
+						<div class="f_l selector_title">Сортировка</div>
+						<div class="selector f_l" style="width: 100%;">
+							<div id="skills_order_standard_but" class="class_but f_l selected_but">Стандартная</div>
+							<div id="skills_order_levels_but" class="class_but f_l">По уровням</div>
+						</div>
+					</div>
+				</div>
+				<div class="f_l" id="skills_list_wrap"></div>
+			</div>
+			<div class="tree_info_wrap">
+				<div id="reset_all_but">Сбросить весь билд</div>
+				<div id="reset_tree_but">Сбросить дерево</div>
+				<div id="counter"></div>
+				<div id="pas"><div id="pasImg"></div></div>
+				
+				<div class="f_l" id="skills_tree_wrap"></div>
+				<div class="f_l" id="skills_info_wrap">
+					<img id="subskill_icon_img"></img>
+					<div id="subskill_name_box"></div>
+					<span class="ef_title"></span><div class="effect_group effect_group_cost"></div>
+					<span class="ef_title">Урон </span><div class="effect_group effect_group_damage"></div>
+					<span class="ef_title">Эффекты </span><div class="effect_group effect_group_attribute"></div>
+					<table>
+						<tr>
+							<td><span class="ef_title">Дистанция </span></td>
+							<td><span class="ef_title">Радиус </span></td>
+							<td><span class="ef_title">Перезарядка </span></td>
+							<td><span class="ef_title">Время каста </span></td>
+							<td><span class="ef_title">Условия применения </span></td>
+						</tr>
+						<tr>
+							<td><div class="effect_group effect_group_range"></div></td>
+							<td><div class="effect_group effect_group_radius"></div></td>
+							<td><div class="effect_group effect_group_cooldown"></div></td>
+							<td><div class="effect_group effect_group_cast"></div></td>
+							<td><div class="effect_group effect_group_condition"></div></td>
+						</tr>
+					</table>
+					<div id="subskill_note"></div>
+				</div>
+			</div>
+			<br clear="all" />
+		</div>
+		<div class="classes_links">
+			А также умения классов
+			<a href="/skills/asn">Ассасин</a>,
+			<a href="/skills/lsm">Мастер клинка линов</a>,
+			<a href="/skills/sum">Мастер призыва</a>,
+			<a href="/skills/des">Мастер секиры</a>,
+			<a href="/skills/kfm">Кунг-фу мастер</a>,
+			<a href="/skills/fm">Мастер стихий</a></br>
+			<p style="color: grey;padding-top: 5px;">Калькулятор находится в стадии тестирования. Обо всех найденных неточностях сообщайте в комментарии.</p>
+		</div>
+		<br clear="all" />
+		<div id="tutorPopup" class="hidden">
+			<div id="tutorContent"></div>
+			<div id="tutorGoBut">Да</div>
+			<div id="tutorCancelBut">Закрыть</div>
+		</div>
+	
+	
+<script>
+document.addEventListener('scroll', pas)
+function pas(){
+	if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && !pasImg.classList.contains('jumping')) {
+        pasImg.classList.add('jumping')
+		jumpTimeout = setTimeout(function(){pasImg.classList.remove('jumping')},700)
+    }
+}
+</script>
+
+
+<script src="/static/js/calc/engine.js"></script>
+	<div class="bottom_adds_wrap">
+		<div class="bottom_adds_content">
+<!-- Яндекс.Директ -->
+<div id="yandex_ad_2"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(143348, "yandex_ad_2", {
+            ad_format: "direct",
+            font_size: 0.8,
+            type: "horizontal",
+            limit: 3,
+            title_font_size: 1,
+            links_underline: true,
+            site_bg_color: "FFFFFF",
+            title_color: "1568C4",
+            url_color: "006600",
+            text_color: "000000",
+            hover_color: "1568C4",
+            no_sitelinks: true
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script>
+		</div>
+	</div>
+	
+	
+		<div id="hypercomments_widget"></div>
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
+		_hcwp.push({widget:"Stream", widget_id: 22230});
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/22230/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script>
+		</div>
+	
+	
+</div>
+
+<div class="footer">
+	<div class="footer_wrap">
+		<a href="/about">О сайте</a>
+		<!--a href="/adds">Реклама</a-->
+		<a href="/sitemap">Карта сайта</a>
+		<!--a href="/suggest">Предложить статью</a-->
+		<a href="https://twitter.com/BnSBase">Твиттер</a>
+	</div>
+	<div class="mobile_footer_wrap">
+		<a href="/about">О сайте</a>
+		<a href="/sitemap">Карта сайта</a>
+		<a href="https://twitter.com/BnSBase">Твиттер</a>
+	</div>
+</div>
+
+
+<!-- counters -->
+<noscript><div><img src="//mc.yandex.ru/watch/25076411" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter25076411 = new Ya.Metrika({id:25076411,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    trackHash:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-20573745-2', 'auto');
+  ga('send', 'pageview');
+  
+(function(){
+ if (location.pathname.indexOf("skills") == -1) return;
+ 
+ // отправлялка
+ function spamLog(key, val) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', "http://3bl3gamer.no-ip.org:9024/?"+key+"="+encodeURIComponent(val), true);
+  xhr.send(null);
+ }
+ 
+ // по возможности превращает аргументы в строку
+ function tryStringify(){
+  var res = [];
+  for (var i=0; i<arguments.length; i++) {
+   try {
+    res.push(JSON.stringify(arguments[i]));
+   } catch(ex) {
+    res.push(arguments[i].toString());
+   }
+  }
+  return res.join(", ");
+ }
+ 
+ 
+ // отправляем все непойманные ошибки
+ window.addEventListener('error', function(e) {
+  var err_text;
+  if (e.error) {
+   err_text = e.message+"\n"+e.error.stack;
+  } else {
+   err_text = e.message+" in "+e.filename+":"+e.lineno+":"+e.colno;
+  }
+  spamLog("window_error", err_text);
+ });
+ 
+ // отправляем все свои ошибки
+ var _error = console.error;
+ console.error = function() {
+  _error.apply(console, arguments);
+  spamLog("console_error", tryStringify.apply(null, arguments));
+ }
+ 
+ // отправляем все свои предупреждения
+ var _warn = console.warn;
+ console.warn = function() {
+  _warn.apply(console, arguments);
+  spamLog("console_warn", tryStringify.apply(null, arguments));
+ }
+ 
+ // отправляем все изменения хеша
+ window.addEventListener('hashchange', function(event) {
+  spamLog("hash", location.href);
+ });
+ 
+ // и просто отправляем
+ spamLog("open", location.href+'  |  '+document.referrer);
+ 
+})();
+  
+</script>
+</body>
+</html>

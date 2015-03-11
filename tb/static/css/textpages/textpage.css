@@ -1,0 +1,186 @@
+#page_contents{
+	overflow: hidden;
+	transition: visibility 0s linear 0.1s, opacity 0.1s linear;
+}
+
+#page_contents p{
+	margin-bottom: 0;
+}
+.author{
+	text-align: right;
+	font-size: 14px;
+	color: rgba(133, 133, 133, 1);
+}
+.seealso{
+	padding-top: 10px;
+}
+.seealso a{
+	text-transform: lowercase;
+}
+.pc_nojs{
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+.pc_nojs p{
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+.pc_nojs ul{
+	padding-left: 10px;
+}
+.pc_js{
+	position: fixed;
+	width: 246px;
+	max-height: 40px;
+	border: 1px solid rgb(207, 207, 207);
+	background: white;
+	margin-left: 678px;
+	top: 180px;
+	z-index: 90;
+	border-radius: 5px;
+}
+.pc_js p {
+	line-height: 40px;
+	font-size: 20px;
+	margin-left: 20px;
+	position:relative;
+	cursor: pointer;
+}
+.pc_js p:before{
+	transition: all .1s;
+}
+.pc_minimized ul{
+	display:none;
+}
+.pc_maximized ul{
+	display:block;
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	line-height: 24px;
+}
+.pa_add_content ul li, .pc_maximized ul li{
+	padding-bottom: 10px;
+}
+.pa_add_content a, .pc_js a{
+	display: block;
+	width:100%;
+}
+.pc_js a{
+	height:100%;
+}
+.pa_add_content ul li:nth-last-child(1), .pc_maximized ul li:nth-last-child(1){
+	padding-bottom: 0;
+}
+.pc_maximized{
+	max-height: 700px;
+	overflow: hidden;
+}
+.pc_minimized p:before{
+	position: absolute;
+	content: "";
+	left: 200px;
+	width: 2;
+	height: 16px;
+	margin-top: 12;
+	background: #5CA3F1;
+	transform: rotate(0);
+}
+.pc_minimized p:after{
+	position: absolute;
+	content: "";
+	left: 200px;
+	height: 2;
+	width: 16px;
+	line-height: 40px;
+	font-size: 24px;
+	margin-left: -7;
+	margin-top: 19px;
+	background: #5CA3F1;
+}
+.pc_maximized p:after{
+	position: absolute;
+	content: "";
+	left: 200px;
+	height: 2;
+	width: 16px;
+	line-height: 40px;
+	font-size: 24px;
+	margin-left: -7;
+	margin-top: 19px;
+	background: #5CA3F1;
+}
+.pc_maximized p:before{
+	position: absolute;
+	content: "";
+	left: 200px;
+	width: 2;
+	height: 16px;
+	margin-top: 12;
+	background: #5CA3F1;
+	transform: rotate(90deg);
+}
+.pc_hidden{
+	opacity: 0;
+	visibility: hidden;
+}
+.pc_visible{
+	opacity: 1;
+	visibility: visible;
+	animation: a_pc_visible .1s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes a_pc_visible {
+    from {
+	opacity: 0;
+	}
+    to {
+	opacity: 1;
+	}
+}
+
+/* Standard syntax */
+@keyframes a_pc_visible {
+    from {
+	opacity: 0;
+	}
+    to {
+	opacity: 1;
+	}
+}
+/*                 for curves on canvas      */
+.for_canvas {
+	position: relative;
+	display: inline-block;
+}
+.for_canvas .hover_canvas {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+.for_canvas .hover_box {
+	position: absolute;
+	transform: translateZ(0);
+	margin-top: -2px;
+	margin-left: 2px;
+}
+.for_canvas .hover_box .ca_content {
+	position: absolute;
+	bottom: 0;
+	border: 2px solid rgb(255, 232, 0);
+	border-radius: 3px;
+	padding: 3px;
+	background: rgba(255, 255, 255, 0.73);
+}
+/*                                                         adds */
+.top_adds_wrap{
+	background: rgb(245, 245, 245);
+}
+.bottom_adds_wrap{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	float: left;
+}

@@ -1,0 +1,16 @@
+.weps_acc {
+	margin-left: 0;
+}
+.weps_acc .weps_table_inner {
+	width: 191px;
+	box-sizing: border-box;
+}
+.weps_acc>div:nth-child(n+2) {
+	margin-left: 0;
+}
+.weps_acc .item_name {
+	max-width: 120px;
+}
+.item_descr{
+	margin-top: 20px;
+}

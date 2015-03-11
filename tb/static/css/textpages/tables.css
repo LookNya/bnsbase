@@ -1,0 +1,18 @@
+.page table{
+	width: 902px;
+	margin-bottom: 25px;
+}
+.page table tr:nth-child(1){
+	background: #5CA3F1;
+	color: white;
+}
+.page table tr:nth-child(n+2){
+	border-bottom: 2px solid rgb(160, 200, 244);
+}
+.page table tr{
+	height: 45px;
+	line-height: 45px;
+}
+.page table td{
+	padding-left: 17px;
+}

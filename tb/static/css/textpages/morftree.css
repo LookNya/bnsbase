@@ -1,0 +1,132 @@
+.morf_line{
+	width: 100%;
+	overflow: visible;
+}
+.morf_tip{
+	font-size: 18;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	line-height: 23px;
+}
+.morf_line p{
+	text-align: center;
+}
+.ml_content{
+	width: 100%;
+	overflow: visible;
+}
+.ml_block{
+	width: 420px;
+	height: 300px;
+	position: relative;
+	margin-bottom: 40px;
+	padding: 13px;
+	padding-bottom: 0;
+	padding-top: 20px;
+	border: 2px solid rgb(240, 240, 240);
+	border-bottom: none;
+	border-radius: 1px;
+}
+.ml_b_right{
+	border-right: none;
+}
+.ml_block_inner{
+	width: 50%;
+	height: 270px;
+	box-sizing: border-box;
+}
+.ml_bi_left p{
+	text-align: left;
+}
+.ml_bi_right p{
+	text-align: right;
+}
+.item_img{
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	border-radius: 3px;
+	opacity: 0.8;
+  -webkit-filter: grayscale(50%);
+  -moz-filter: grayscale(50%);
+  -ms-filter: grayscale(50%);
+  -o-filter: grayscale(50%);
+  filter: grayscale(50%);
+}
+.item_name{
+	width: 160px;
+	height: 50px;
+	transition: background-color .5s;
+	background-color: white;
+}
+.highlightable_a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	transition: background-color .5s;
+	background-color: white;
+}
+.itn_highlighted{
+	transition: background-color .1s;
+	background-color: #DAE8F6;
+}
+.item_descr{
+	margin-top: 20px;
+}
+.item_descr p{
+	font-size: 14px;
+	width: 140px;
+}
+.id_title{
+	margin-top: 5px;
+}
+.id_text{
+	font-weight: 300;
+}
+.ml_bi_left .item_img, .ml_bi_left .item_name, .ml_bi_left .item_descr{
+	float: left;
+}
+.ml_bi_right .item_name, .ml_bi_right .item_descr,.ml_bi_right .item_img{
+	float: right;
+}
+
+.ml_block_summ{
+	height: 50px;
+	line-height: 68px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+.morf_arrow_down{
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 210px 0 210px;
+	border-color: #9AC2EE transparent transparent transparent;
+}
+.morf_arrow_down:after{
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: -15;
+	left: -180;
+	content:"";
+	border-style: solid;
+	border-width: 10px 180px 0 180px;
+	border-color: white transparent transparent transparent;
+}/*
+.ml_separator{
+	height: 281px;
+	border-right: 1px solid rgb(240, 240, 240);
+	margin-right: 25px;
+	margin-left: 25px;
+}
+*/
+.ml_one>div{
+	text-align: center;
+}
+.ml_one>div>div{
+	display: inline-block;
+	text-align: left;
+}

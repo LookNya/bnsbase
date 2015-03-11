@@ -1,0 +1,227 @@
+.content{
+	background: none;
+	padding-bottom: 70px;
+}
+#con_bg{
+	min-width: 1260px;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	min-height: 750px;
+	position: absolute;
+	top: 50;
+	z-index: -999;
+}
+.cont_wrap{
+	margin: 0 auto;
+}
+.description p{
+	color: rgba(0,0,0,1);
+	font-style: normal;
+	font-weight: 300;
+	padding-bottom: 35px;
+	text-align: center;
+}
+.description h1{
+	padding-bottom: 60px;
+}
+.head_1{
+	margin-top: 110px;
+	font-size: 87px;
+	margin-bottom: 0px;
+}
+.head_2{
+	padding-top: 12px;
+	margin-top: 0px;
+	font-size: 48px;
+}
+/*                                blocks*/
+.blocks{
+	overflow: hidden;
+	width: 100%;
+}
+.blocks a,.blocks a:hover,.blocks a:active,.blocks a:visited{
+	width: 100%!important;
+	height: 100%!important;
+	display: block!important;
+	color:black!important;
+}
+
+.blocks_wrap{
+	width: 980px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.block_line, .tiles{
+	width: 100%;
+	overflow: hidden;
+}
+.block_line{
+	padding-top: 50px;
+}
+.block_line h2{
+	margin-bottom: 20px;
+	color: rgba(27, 27, 27, 1);
+}
+.tiles div{
+	position: relative;
+	width: 980px;
+	height: 300px;
+}
+.tiles p{
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+	padding-right: 20px;
+	font-size: 20px;
+	background: rgba(92, 163, 241, 0.6);
+}
+.tiles>div>div{
+	position: absolute;
+}
+.tiles .t_1>div:nth-child(1){
+	width: 980px;
+	height: 300px;
+}
+.tiles .t_2>div:nth-child(1){
+	width: 480px;
+	height: 300px;
+}
+.tiles .t_2>div:nth-child(2){
+	width: 480px;
+	height: 300px;
+	left: 500px;
+}
+.tiles .t_3>div:nth-child(1){
+	width: 480px;
+	height: 300px;
+	
+}
+.tiles .t_3>div:nth-child(2){
+	width: 480px;
+	height: 140px;
+	left: 500px;
+}
+.tiles .t_3>div:nth-child(3){
+	width: 480px;
+	height: 140px;
+	top: 160px;
+	left: 500px;
+}
+.tiles .t_4>div{
+	width: 480px;
+	height: 140px;
+}
+.tiles .t_4>div:nth-child(2){
+	top: 160px;
+}
+.tiles .t_4>div:nth-child(3){
+	left: 500px;
+}
+.tiles .t_4>div:nth-child(4){
+	top: 160px;
+	left: 500px;
+}
+.tiles .t_7>div:nth-child(1), .tiles .t_7>div:nth-child(2), .tiles .t_7>div:nth-child(3), .tiles .t_7>div:nth-child(4), .tiles .t_7>div:nth-child(5), .tiles .t_7>div:nth-child(6){
+	width: 262px;
+	height: 140px;
+}
+.tiles .t_7>div:nth-child(7){
+	width: 131px;
+	height: 300px;
+}
+.tiles .t_7>div:nth-child(2){
+	left: 282px;
+}
+.tiles .t_7>div:nth-child(3){
+	top: 160px;
+}
+.tiles .t_7>div:nth-child(4){
+	left: 282px;
+	top: 160px;
+}
+.tiles .t_7>div:nth-child(5){
+	left: 564px;
+}
+.tiles .t_7>div:nth-child(6){
+	left: 564px;
+	top: 160px;
+}
+.tiles .t_7>div:nth-child(7){
+	left: 846px;
+}
+
+.t_7_c{
+	height: 1060px!important;
+}
+.tiles .t_7_c>div{
+	width: 480px;
+	height: 250px;
+}
+.tiles .t_7_c>div:nth-child(even){
+	left: 500px;
+}
+.tiles .t_7_c>div:nth-child(3), .tiles .t_7_c>div:nth-child(4){
+	top: 270px;
+}
+.tiles .t_7_c>div:nth-child(5), .tiles .t_7_c>div:nth-child(6){
+	top: 540px;
+}
+.tiles .t_7_c>div:nth-child(7){
+	width: 980px;
+	top: 810px;
+}
+
+/*                                utils*/
+.bl_2, .bl_3{
+	position: relative;
+	height: 363px;
+}
+.bl_2>div, .bl_3>div{
+	position: absolute;
+	width: 313px;
+}
+.bl_2>div>div{
+	width: 480px;
+	height: 313px;
+	box-sizing: border-box;
+}
+.bl_2>div:nth-child(2){	
+	left: 500px;
+}
+.bl_3>div>div{
+	width: 313px;
+	height: 313px;
+	box-sizing: border-box;
+}
+.bl_3>div:nth-child(2){	
+	left: 333px;
+}
+.bl_3>div:nth-child(3){	
+	left: 666px;
+}
+.twittblock{
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 85%, #e5e5e5 85%, #e5e5e5 91%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(85%,#e5e5e5), color-stop(85%,#e5e5e5), color-stop(91%,#e5e5e5));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 85%,#e5e5e5 85%,#e5e5e5 91%);
+	background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 85%,#e5e5e5 85%,#e5e5e5 91%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 85%,#e5e5e5 85%,#e5e5e5 91%);
+	background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 85%,#e5e5e5 85%,#e5e5e5 91%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+}
+.block_additions{
+	overflow: hidden;
+	border-top: none;
+	width: 100%;
+	background: white;
+}
+.block_additions h2{
+	font-size: 20px;
+}
+.utils_tile, .utils_tile_2, .utils_tile_3{
+	text-align: left;
+	display: inline-block;
+}

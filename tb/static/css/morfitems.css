@@ -1,0 +1,297 @@
+.catalyst{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	left: 203px;
+  -webkit-filter: grayscale(50%);
+  -moz-filter: grayscale(50%);
+  -ms-filter: grayscale(50%);
+  -o-filter: grayscale(50%);
+  filter: grayscale(50%);
+}
+.catalyst div{
+	position: absolute;
+	z-index: 100;
+	top: 35;
+	left: -75px;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 150px;
+	background: grey;
+	border: 1px solid rgb(207, 207, 207);
+	background: white;
+	border-radius: 5px;
+	visibility:hidden;
+	opacity:0;
+	transition:visibility 0s linear 0.1s, opacity 0.1s linear;
+}
+.catalyst:hover div{
+	display: block;
+	visibility:visible;
+	opacity:1;
+	transition-delay:0s;
+}
+.catalyst div p:nth-child(1){
+	text-align: center;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.catalyst div p:nth-child(2){
+	text-align: left;
+}
+.ca_1o1{
+	top: 120px;
+}
+.ca_1o2{
+	top: 90px;
+}
+.ca_2o2{
+	top: 150px;
+}
+.ca_1o3{
+	top: 90px;
+}
+.ca_2o3{
+	top: 140px;
+}
+.ca_3o3{
+	top: 190px;
+}
+/*                    items                      */
+.wep_1{
+	background: url('http://i.imgur.com/j93pUTZ.png');
+	background-size: cover;
+}
+.wep_2{
+	background: url('http://i.imgur.com/qGRmkhk.png');
+	background-size: cover;
+}
+.wep_3{
+	background: url('http://i.imgur.com/kYvvTEk.png');
+	background-size: cover;
+}
+.wep_4{
+	background: url('http://i.imgur.com/MYiYioL.png');
+	background-size: cover;
+}
+.wep_5{
+	background: url('http://i.imgur.com/TAom9JW.png');
+	background-size: cover;
+}
+.wep_6{
+	background: url('http://i.imgur.com/vTbz1NY.png');
+	background-size: cover;
+}
+.wep_7{
+	background: url('http://i.imgur.com/NReq8bt.png');
+	background-size: cover;
+}
+.wep_8{
+	background: url('http://i.imgur.com/MfzjkmK.png');
+	background-size: cover;
+}
+.wep_7{
+	background: url('http://i.imgur.com/NReq8bt.png');
+	background-size: cover;
+}
+.wep_9{
+	background: url('http://i.imgur.com/ig7nDFC.png');
+	background-size: cover;
+}
+.wep_10{
+	background: url('http://i.imgur.com/uqV7uBr.png');
+	background-size: cover;
+}
+.wep_11{
+	background: url('http://i.imgur.com/3vJ8ud7.png');
+	background-size: cover;
+}
+.wep_12{
+	background: url('http://i.imgur.com/PYk70QI.png');
+	background-size: cover;
+}
+.wep_13{
+	background: url('http://i.imgur.com/WVCy1C5.png');
+	background-size: cover;
+}
+.wep_14{
+	background: url('http://i.imgur.com/dSn4OnR.png');
+	background-size: cover;
+}
+.wep_15{
+	background: url('http://i.imgur.com/DXaUna3.png');
+	background-size: cover;
+}
+.wep_16{
+	background: url('http://i.imgur.com/wiuxsXe.png');
+	background-size: cover;
+}
+.wep_17{
+	background: url('http://i.imgur.com/vKb2P3m.png');
+	background-size: cover;
+}
+.wep_18{
+	background: url('http://i.imgur.com/Y3WA0Ov.png');
+	background-size: cover;
+}
+.wep_19{
+	background: url('/img/idb/wep/21.jpg');
+	background-size: cover;
+}
+.wep_20{
+	background: url('/img/22.jpg');
+	background-size: cover;
+}
+.wep_21{
+	background: url('/img/23.jpg');
+	background-size: cover;
+}
+.wep_22{
+	background: url('/img/24.jpg');
+	background-size: cover;
+}
+.wep_23{
+	background: url('/img/25.jpg');
+	background-size: cover;
+}
+.wep_24{
+	background: url('/img/26.jpg');
+	background-size: cover;
+}
+/*                    catalysts                      */
+.ca_1{
+	background: green;
+}
+.ca_1{
+	background: url('http://i1.17173cdn.com/z6po4a/YWxqaGBf/images/data/grocery/big/Quest_green_liquor_glass_bottle.png');
+	background-size: cover;
+}
+.ca_2{
+	background: url('http://cha.17173.com/bns/images/data/grocery/small/Gather_Element_Mannyeon.png');
+	background-size: cover;
+}
+.ca_3{
+	background: url('http://cha.17173.com/bns/images/data/grocery/small/Gather_Element_Sipryeon.png');
+	background-size: cover;
+}
+.ca_4{
+	background: url('http://cha.17173.com/bns/images/data/grocery/small/Grocery_YomaTooth.png');
+	background-size: cover;
+}
+.ca_5{
+	background: url('http://i1.17173cdn.com/z6po4a/YWxqaGBf/images/data/grocery/big/Grocery_YumHwaHorn.png');
+	background-size: cover;
+}
+.ca_6{
+	background: url('http://i1.17173cdn.com/z6po4a/YWxqaGBf/images/data/grocery/big/Gather_shiny_gemstone.png');
+	background-size: cover;
+}
+.ca_7{
+	background: url('http://i1.17173cdn.com/z6po4a/YWxqaGBf/images/data/grocery/big/Gather_Element_Baekryeon.png');
+	background-size: cover;
+}
+.x2:after{
+	position: absolute;
+	content: 'x2';
+	top: 27;
+	left: 25;
+	font-size: 14px;
+}
+.x3:after{
+	position: absolute;
+	content: 'x3';
+	top: 27;
+	left: 25;
+	font-size: 14px;
+}
+.x4:after{
+	position: absolute;
+	content: 'x4';
+	top: 27;
+	left: 25;
+	font-size: 14px;
+}
+.x5:after{
+	position: absolute;
+	content: 'x5';
+	top: 27;
+	left: 25;
+	font-size: 14px;
+}
+
+.ac_1{
+	background: url('/img/ic/ac/1.png');
+	background-size: cover;
+}
+.ac_2{
+	background: url('/img/ic/ac/2.png');
+	background-size: cover;
+}
+.ac_3{
+	background: url('/img/ic/ac/3.png');
+	background-size: cover;
+}
+.ac_4{
+	background: url('/img/ic/ac/4.png');
+	background-size: cover;
+}
+.ac_5{
+	background: url('/img/ic/ac/5.png');
+	background-size: cover;
+}
+.ac_6{
+	background: url('/img/ic/ac/6.png');
+	background-size: cover;
+}
+.ac_7{
+	background: url('/img/ic/ac/7.png');
+	background-size: cover;
+}
+.ac_8{
+	background: url('/img/ic/ac/8.png');
+	background-size: cover;
+}
+.ac_9{
+	background: url('/img/ic/ac/9.png');
+	background-size: cover;
+}
+.wep_1{
+	background: url('/img/ic/wep/1.png');
+	background-size: cover;
+}
+.wep_2{
+	background: url('/img/ic/wep/2.png');
+	background-size: cover;
+}
+.wep_3{
+	background: url('/img/ic/wep/3.png');
+	background-size: cover;
+}
+.wep_4{
+	background: url('/img/ic/wep/4.png');
+	background-size: cover;
+}
+.wep_5{
+	background: url('/img/ic/wep/5.png');
+	background-size: cover;
+}
+.wep_6{
+	background: url('/img/ic/wep/6.png');
+	background-size: cover;
+}
+.wep_7{
+	background: url('/img/ic/wep/7.png');
+	background-size: cover;
+}
+.wep_8{
+	background: url('/img/ic/wep/8.png');
+	background-size: cover;
+}
+.wep_9{
+	background: url('/img/ic/wep/9.png');
+	background-size: cover;
+}
