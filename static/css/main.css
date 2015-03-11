@@ -597,7 +597,7 @@ z-index: 9999;
 	display: none;
 }
 .top_adds_content{
-	width: 980px;
+	width: 95%;
 	margin: 0 auto;
 }
 .bottom_adds_wrap{
@@ -607,8 +607,6 @@ z-index: 9999;
 }
 .bottom_adds_content{
 	width: 980px;
-	height: 100px;
-	background: black;
 	margin: 0 auto;
 }
 .adds_enabled .top_adds_wrap ,.adds_enabled .bottom_adds_wrap{
