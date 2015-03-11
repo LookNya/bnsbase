@@ -595,6 +595,7 @@ z-index: 9999;
 .top_adds_wrap{
 	padding-top: 20px;
 	display: none;
+	width: 100%;
 }
 .top_adds_content{
 	width: 95%;
@@ -608,6 +609,8 @@ z-index: 9999;
 .bottom_adds_content{
 	width: 980px;
 	margin: 0 auto;
+	padding: 0px 31px;
+	box-sizing: border-box;
 }
 .adds_enabled .top_adds_wrap ,.adds_enabled .bottom_adds_wrap{
 	display: block;

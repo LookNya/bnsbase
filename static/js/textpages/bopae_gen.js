@@ -42,19 +42,43 @@ function fillPlanes(){
 		return str
 	}
 	function genTable(data){
+		
 		var str='<div>'+
-					'<div>'+'<div>8</div>'+genPieceData(data['piece_8'])+'</div>'+
-					'<div>'+'<div>1</div>'+genPieceData(data['piece_1'])+'</div>'+
-					'<div>'+'<div>2</div>'+genPieceData(data['piece_2'])+'</div>'+
-				'</div><div>'+
-					'<div>'+'<div>7</div>'+genPieceData(data['piece_7'])+'</div>'+
-					'<div class="tbnsblogo">BnS Base</div>'+
-					'<div>'+'<div>3</div>'+genPieceData(data['piece_3'])+'</div>'+
-				'</div><div>'+
-					'<div>'+'<div>6</div>'+genPieceData(data['piece_6'])+'</div>'+
-					'<div>'+'<div>5</div>'+genPieceData(data['piece_5'])+'</div>'+
-					'<div>'+'<div>4</div>'+genPieceData(data['piece_4'])+'</div>'+
+					'<div>'+
+						'<div>'+'<div class="p_num">8</div>'+genPieceData(data['piece_8'])+'</div>'+
+						'<div>'+'<div class="p_num">7</div>'+genPieceData(data['piece_7'])+'</div>'+
+						'<div>'+'<div class="p_num">6</div>'+genPieceData(data['piece_6'])+'</div>'+
+					'</div>'+
+				'</div>'+
+				'<div>'+
+					'<div>'+
+						'<div>'+'<div class="p_num">1</div>'+genPieceData(data['piece_1'])+'</div>'+
+						'<div><div class="tbnsblogo"><div>BnS Base</div></div></div>'+
+						'<div>'+'<div class="p_num">5</div>'+genPieceData(data['piece_5'])+'</div>'+
+					'</div>'+
+				'</div>'+
+				'<div>'+
+					'<div>'+
+						'<div>'+'<div class="p_num">2</div>'+genPieceData(data['piece_2'])+'</div>'+
+						'<div>'+'<div class="p_num">3</div>'+genPieceData(data['piece_3'])+'</div>'+
+						'<div>'+'<div class="p_num">4</div>'+genPieceData(data['piece_4'])+'</div>'+
+					'</div>'+
 				'</div>'
+		/*
+		var str='<div>'+
+					'<div><div>'+'<div class="p_num">8</div>'+genPieceData(data['piece_8'])+'</div></div>'+
+					'<div><div>'+'<div class="p_num">1</div>'+genPieceData(data['piece_1'])+'</div></div>'+
+					'<div><div>'+'<div class="p_num">2</div>'+genPieceData(data['piece_2'])+'</div></div>'+
+				'</div><div>'+
+					'<div><div>'+'<div class="p_num">7</div>'+genPieceData(data['piece_7'])+'</div></div>'+
+					'<div class="tbnsblogo">BnS Base</div>'+
+					'<div><div>'+'<div class="p_num">3</div>'+genPieceData(data['piece_3'])+'</div></div>'+
+				'</div><div>'+
+					'<div><div>'+'<div class="p_num">6</div>'+genPieceData(data['piece_6'])+'</div></div>'+
+					'<div><div>'+'<div class="p_num">5</div>'+genPieceData(data['piece_5'])+'</div></div>'+
+					'<div><div>'+'<div class="p_num">4</div>'+genPieceData(data['piece_4'])+'</div></div>'+
+				'</div>'
+		*/
 		return str
 	}
 	function genPieceData(data){
@@ -62,7 +86,7 @@ function fillPlanes(){
 		if(data.main_min||data.min){
 			var statName = Object.keys(data.main_min)
 			var statName_lang = stat_namesDB[statName].ru
-			str+='<div class="main_stat">'+statName_lang+' '+ data.main_min[statName]+'–'+data.main_max[statName]+'</div><div>Плюс один их трех:</div>'
+			str+='<div class="main_stat">'+statName_lang+' '+ data.main_min[statName]+'–'+data.main_max[statName]+'</div>'
 			
 			var keys = Object.keys(data.min)
 			for(var i=0; i<keys.length; i++){

@@ -1,15 +1,22 @@
-﻿.planes_mobile{
-	overflow: hidden;
-	padding: 15px;
-}
+﻿
 #hypercomments_widget{
 	padding: 0px!important;
+}
+.planes_desctop h2{
+	margin-top: 0px; 
+}
+.for_plane{
+	padding-top: 25px;
+	padding-bottom: 50px;
 }
 .plane_top{
 	overflow: hidden;
 }
 .pt_left{
-	width: 640px;
+	width: 697px;
+}
+.pt_right img{
+	height: 200px;
 }
 .p_descr{
 	padding-bottom: 20px;
@@ -30,22 +37,69 @@
 .plane_set_8:before {
 	content: "8 кусков: ";
 }
+.p_num{
+	padding-bottom: 5px;
+}
 .plane_table{
 	display: table;
 	width: 100%;
 	line-height: normal;
-	padding-bottom: 50px;
 }
+
+.plane_table>div{
+	display: table-cell;
+	width: 33.3%;
+	vertical-align: middle;
+}
+.plane_table>div>div{
+	text-align: center;
+}
+.plane_table>div>div>div{
+	padding: 15px 0px;
+	text-transform: capitalize;
+	height: 100px;
+}
+.plane_table>div:nth-child(1){
+	text-align: left;
+}
+.plane_table>div:nth-child(3){
+	text-align: right;
+}
+.plane_table>div:nth-child(1)>div,.plane_table>div:nth-child(3)>div{
+	display: inline-block;
+}
+
+/*
 .plane_table>div{
 	display: table-row;
 }
 .plane_table>div>div{
 	display: table-cell;
-	text-align: center;
 	width: 33.3%;
-	padding: 10px;
+	padding: 15px 10px;
+	text-transform: capitalize;
 }
+.plane_table>div>div>div{
+	display: inline-block;
+	text-align: center;
+}
+.plane_table>div>div:nth-child(1){
+	text-align: left;
+}
+.plane_table>div>div:nth-child(3){
+	text-align: middle;
+}
+.plane_table>div>div:nth-child(3){
+	text-align: right;
+}
+*/
 .tbnsblogo{
+	display: table;
+	margin: 0 auto;
+	height: 100%;
+}
+.tbnsblogo>div{
+	display: table-cell;
 	vertical-align: middle;
 }
 .main_stat{

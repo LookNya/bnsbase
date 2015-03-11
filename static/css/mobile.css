@@ -12,6 +12,13 @@
 }
 .planes_mobile{
 	display: none;
+	padding: 0px;
+}
+.plate_holder{
+	width: 100%;
+}
+.plate_holder>div{
+	float: left;
 }
 @media (min-width: 0px) and (max-width: 760px) {
 /*                                          mobile */
@@ -305,6 +312,16 @@
 	font-style: italic;
 	color: grey;
 }
+.planes_mobile{
+	overflow: hidden;
+	padding: 15px;
+}
+.plate_holder{
+	width: auto;
+}
+.plate_holder>div{
+	float: none;
+}
 /*                              turning off some blocks*/
 .daily_line{
 	display: none;
@@ -330,10 +347,13 @@
 	font-style: italic;
 }
 .planes_mobile{
-	display: block;
+	display: block!important;
 }
 .planes_desctop{
-	display: none;
+	display: none!important;
+}
+.p_select{
+	display:none;
 }
 .site_contents_table{
 	display: none!important;

@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /plains/
+Disallow: /tower/
+Disallow: /equip/plains/
+Disallow: /static/
+Disallow: /about/
+Sitemap: /sitemap.xml

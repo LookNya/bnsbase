@@ -20,6 +20,7 @@
 	<title>Характеристики скрижалей — база знаний Blade and Soul wiki, лучшие гайды</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
+<!--<body class="adds_enabled">-->
 <body>
 <nav>
 <div class="header">
@@ -170,6 +171,35 @@
 
 <div class="top_adds_wrap">
 	<div class="top_adds_content">
+<!-- Яндекс.Директ -->
+<div id="yandex_ad"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(143348, "yandex_ad", {
+            ad_format: "direct",
+            font_size: 0.8,
+            type: "horizontal",
+            limit: 4,
+            title_font_size: 1,
+            links_underline: false,
+            site_bg_color: "FFFFFF",
+            title_color: "1568C4",
+            url_color: "006600",
+            text_color: "000000",
+            hover_color: "1568C4",
+            no_sitelinks: true
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script>
 	</div>
 </div>
 
@@ -177,7 +207,7 @@
 	
  
  
-
+ 
 	
 	
 
@@ -189,6 +219,17 @@
 .page{
 	padding: 40px;
 	box-sizing: border-box;
+}
+.p_select span{
+	border-bottom: 1px dotted rgb(36, 98, 166);
+	cursor: pointer;
+}
+.p_select span:hover{
+	border-color: rgb(173, 215, 255);
+}
+.p_select span.slctd{
+	border-bottom: 0px dotted blue;
+	background: rgb(173, 215, 255);
 }
 </style>
 <div class="page">
@@ -210,7 +251,17 @@
 		</ul>
 	</div>
 	<h1>Характеристики<br/> скрижалей</h1>
+	
+	<p style="margin-bottom: 18px;word-spacing: -1px;line-height: 24px;" class="p_select">
+		Отобразить <span id="spn1" class="slctd" data-mode="desctop" onclick="switch_bopae_mode(this)">по-новому</span> <span id="spn2" data-mode="mobile" onclick="switch_bopae_mode(this)">по-старому</span> 
+	<p>
+	
+
 	<div class="planes_desctop">
+		<p style="margin-bottom: 18px;word-spacing: -1px;line-height: 24px;">
+			Некоторые скрижали имеют в плюс к основному дополнительный стат. Дополнительный выбирается случайно. Основной стат выделен жирным.
+		<p>
+	
 		<a name="Скрижаль Легендарного героя равнины"></a>
 		<div class="for_plane" data-item-id="1">Скрижаль Легендарного героя равнины</div>
 		<a name="Скрижаль Нарю"></a>
@@ -487,7 +538,17 @@
 		padding-left: 0px!important;
 	}
 	</style>
-
+<script>
+function switch_bopae_mode(el){
+	var mode=el.dataset.mode
+	spn1.className=""
+	spn2.className=""
+	el.className="slctd"
+	document.getElementsByClassName('planes_desctop')[0].setAttribute('style', 'display:none!important')
+	document.getElementsByClassName('planes_mobile')[0].setAttribute('style', 'display:none!important')
+	document.getElementsByClassName('planes_'+mode)[0].setAttribute('style', 'display:block!important')
+}
+</script>
 <script type="text/javascript" src="/static/js/idb/bopae.js"></script>
 <script type="text/javascript" src="/static/js/idb/stat_names.js"></script>
 <script type="text/javascript" src="/static/js/textpages/bopae_gen.js"></script>
@@ -495,7 +556,35 @@
 
 	<div class="bottom_adds_wrap">
 		<div class="bottom_adds_content">
-	
+<!-- Яндекс.Директ -->
+<div id="yandex_ad_2"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(143348, "yandex_ad_2", {
+            ad_format: "direct",
+            font_size: 0.8,
+            type: "horizontal",
+            limit: 3,
+            title_font_size: 1,
+            links_underline: true,
+            site_bg_color: "FFFFFF",
+            title_color: "1568C4",
+            url_color: "006600",
+            text_color: "000000",
+            hover_color: "1568C4",
+            no_sitelinks: true
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script>
 		</div>
 	</div>
 	
