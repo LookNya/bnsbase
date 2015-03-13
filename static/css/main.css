@@ -657,3 +657,24 @@ z-index: 9999;
 .site_contents_table  a[href*="map"]:after{
 	display: none!important;
 }
+/*                                         top new banner     */
+.top_news_banner{
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	background: #BDE85D;
+	text-align: center;
+	color: rgb(0, 28, 139);
+	font-size: 14px;
+}
+.top_news_banner a{
+	font-weight: 600;
+}
+#closeTopNewsBanner{
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+}
