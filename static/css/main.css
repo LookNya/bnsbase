@@ -154,8 +154,8 @@ h4{
 	margin: 0 auto;
 }
 .header_nav{
-	margin-left: 100px;/*ширина левых блоков*/
-	margin-right: 100px;/*.. правых*/
+	margin-left: 100px;/*ГёГЁГ°ГЁГ­Г  Г«ГҐГўГ»Гµ ГЎГ«Г®ГЄГ®Гў*/
+	margin-right: 100px;/*.. ГЇГ°Г ГўГ»Гµ*/
 	height: 60px;
 }
 .hb_curr> a{
@@ -165,7 +165,7 @@ h4{
 	color: rgb(255, 232, 0)!important;
 }
 
-/*Обнуляем отступы*/
+/*ГЋГЎГ­ГіГ«ГїГҐГ¬ Г®ГІГ±ГІГіГЇГ»*/
 #menu  ul, #menu li {
 z-index: 9999;
     margin:0;
@@ -173,7 +173,7 @@ z-index: 9999;
     list-style-type:none;   
 	cursor: pointer;
 }
-/*Задаём параметры блока, содержащего основное меню*/
+/*Г‡Г Г¤Г ВёГ¬ ГЇГ Г°Г Г¬ГҐГІГ°Г» ГЎГ«Г®ГЄГ , Г±Г®Г¤ГҐГ°Г¦Г Г№ГҐГЈГ® Г®Г±Г­Г®ГўГ­Г®ГҐ Г¬ГҐГ­Гѕ*/
 #menu {
     display:block;    
 }
@@ -187,7 +187,7 @@ z-index: 9999;
 #menu a:hover{
 	color: rgb(220, 247, 255);
 }
-/*Задаём стили для разделов меню*/
+/*Г‡Г Г¤Г ВёГ¬ Г±ГІГЁГ«ГЁ Г¤Г«Гї Г°Г Г§Г¤ГҐГ«Г®Гў Г¬ГҐГ­Гѕ*/
 #menu > li {
     display:inline-block;
     position:relative;
@@ -196,7 +196,7 @@ z-index: 9999;
 #menu > li:last-child{
 	padding-right: 0;
 }
-/*Стили для скрытого выпадающего меню*/
+/*Г‘ГІГЁГ«ГЁ Г¤Г«Гї Г±ГЄГ°Г»ГІГ®ГЈГ® ГўГ»ГЇГ Г¤Г ГѕГ№ГҐГЈГ® Г¬ГҐГ­Гѕ*/
 #menu > li > ul {
     position:absolute;
     top: 2.5em;
@@ -212,7 +212,7 @@ z-index: 9999;
 #menu > li > ul > li >a{
  	padding:10px;
 }
-/*Делаем скрытую часть видимой*/
+/*Г„ГҐГ«Г ГҐГ¬ Г±ГЄГ°Г»ГІГіГѕ Г·Г Г±ГІГј ГўГЁГ¤ГЁГ¬Г®Г©*/
 #menu > li:hover > ul {
 	visibility:visible;
 	opacity:1;
@@ -341,12 +341,12 @@ z-index: 9999;
 }
 .footer_wrap a {
   position: relative;
-  top: 24px; /* ваше значение line-height */ 
+  top: 24px; /* ГўГ ГёГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ line-height */ 
   display: inline-block;
   white-space: nowrap;
   color: rgb(66, 79, 87);
 }
-.footer_wrap:after { /* искусственно добавляем последнюю строчку */ 
+.footer_wrap:after { /* ГЁГ±ГЄГіГ±Г±ГІГўГҐГ­Г­Г® Г¤Г®ГЎГ ГўГ«ГїГҐГ¬ ГЇГ®Г±Г«ГҐГ¤Г­ГѕГѕ Г±ГІГ°Г®Г·ГЄГі */ 
   content: '';
   display: inline-block;
   width: 100%;
@@ -355,7 +355,7 @@ z-index: 9999;
   content: '';
   display: block;
   width: 100%;
-  margin-bottom: -30px; /* ваше значение line-height */ 
+  margin-bottom: -30px; /* ГўГ ГёГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ line-height */ 
 }
 /*                                                     fakes */
 #fake_top_panel{
@@ -666,6 +666,7 @@ z-index: 9999;
 	text-align: center;
 	color: rgb(0, 28, 139);
 	font-size: 14px;
+Width:100%;
 }
 .top_news_banner a{
 	font-weight: 600;
