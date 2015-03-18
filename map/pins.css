@@ -76,8 +76,8 @@
 	top: 5%;
 }
 #d12{
-	left: 67%;
-	top: 48%;
+	left: 77%;
+	top: 26%;
 }
 #d13{/*TODO*/
 	left: 48%;
@@ -192,9 +192,13 @@
 	left: 84%;
 	top: 25%;
 }
-#p28{
-	left: 84%;
-	top: 25%;
+#p28 {
+	left: 8%;
+	top: 35%;
+}
+#p29 {
+	left: 11%;
+	top: 38%;
 }
 /*                                           Common*/
 .pin{
