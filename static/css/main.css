@@ -600,6 +600,7 @@ z-index: 9999;
 .top_adds_content{
 	width: 95%;
 	margin: 0 auto;
+	text-align: center;
 }
 .bottom_adds_wrap{
 	padding-top: 50px;
@@ -611,6 +612,10 @@ z-index: 9999;
 	margin: 0 auto;
 	padding: 0px 31px;
 	box-sizing: border-box;
+	
+}
+.bottom_adds_content .adds_desktop{
+	text-align: center;
 }
 .adds_enabled .top_adds_wrap ,.adds_enabled .bottom_adds_wrap{
 	display: block;
@@ -657,7 +662,7 @@ z-index: 9999;
 .site_contents_table  a[href*="map"]:after{
 	display: none!important;
 }
-/*                                         top new banner     */
+/*                                         top news banner     */
 .top_news_banner{
 	height: 30px;
 	line-height: 30px;

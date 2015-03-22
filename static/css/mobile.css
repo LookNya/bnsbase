@@ -20,6 +20,12 @@
 .plate_holder>div{
 	float: left;
 }
+.adds_desktop{
+	display: block!important;
+}
+.adds_mobile{
+	display: none!important;
+}
 @media (min-width: 0px) and (max-width: 760px) {
 /*                                          mobile */
 /*                                          site header */
@@ -358,9 +364,17 @@
 .site_contents_table{
 	display: none!important;
 }
+.top_news_banner{
+	display: none;
+}
 /*                                                adds */
-.top_adds_wrap,.bottom_adds_wrap{
+.bottom_adds_content{
+	padding: 0px 15px
+}
+.adds_desktop{
 	display: none!important;
 }
-
+.adds_mobile{
+	display: block!important;
+}
 }
