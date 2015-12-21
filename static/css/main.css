@@ -664,14 +664,14 @@ z-index: 9999;
 }
 /*                                         top news banner     */
 .top_news_banner{
-	height: 30px;
-	line-height: 30px;
-	position: relative;
-	background: #BDE85D;
-	text-align: center;
-	color: rgb(0, 28, 139);
-	font-size: 14px;
-	width:100%;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    background: #FF8585;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    width: 100%;
 }
 .top_news_banner a{
 	font-weight: 600;
